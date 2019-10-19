@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background: lightgrey;
+    color: black;
+    border: 3px solid black;
+}
+
+.about{
+    text-align: center;
+    background: white;
+    border: 3px solid black;
+
+}
+.projects{
+    background: grey;
+    text-align: center;
+    border: 3px solid black;
+}
+.center{
+    list-style-type: none;
+    text-align: center;
+}
+.mailto-link{
+    color: black;
+    text-decoration: none;
+}
