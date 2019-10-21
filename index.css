@@ -62,10 +62,11 @@ body {
 
     }
     #city{
-        display: block;
-        max-width: 250px;
-        float: right;
-        margin-top: 120px;
+        /* display: block; */
+        justify-content: center;
+        max-width: 300px;
+        /* float: right; */
+        margin-top: 40px;
         padding: 8px;
 
     }
@@ -74,7 +75,7 @@ body {
         display:flex;
         padding-left: 30px;
         font-family: serif;
-        margin-top: 140px;
+        margin-top: 40px;
         
     }
 
@@ -232,10 +233,11 @@ body {
 
     }
     #city{
-        display: block;
+        /* display: block; */
+        justify-content: center;
         max-width: 350px;
-        float: right;
-        margin-top: 120px;
+        /* float: right; */
+        margin-top: 40px;
         padding: 8px;
 
     }
@@ -244,7 +246,7 @@ body {
         display:flex;
         padding-left: 30px;
         font-family: serif;
-        margin-top: 140px;
+        margin-top: 40px;
         
     }
 
