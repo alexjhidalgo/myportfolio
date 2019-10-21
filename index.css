@@ -2,28 +2,514 @@
     box-sizing: border-box;
 }
 
-header{
-    background: lightgrey;
-    color: black;
-    border: 3px solid black;
+body {
+    font-family: "roboto", sans-serif;
+    margin: 50px;
+    padding: 0;
+    background-color: silver;
+  }
+
+@media  screen and (max-width: 560px){
+    header{
+        background: black;
+        color: silver;
+        border: 3px solid black;
+        max-height: 120px;
+        margin-top: 0;
+
+    }
+
+    #full-name{
+        text-align: center;
+        font-family: serif;
+    }
+
+    #nav ul{
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #nav li{
+        display: inline-flex;
+    }
+    
+    #about-nav{
+        color: #ccddff;
+        text-decoration: none;
+    }
+    #projects-nav{
+        color: #99bbff;
+        text-decoration: none;
+    }
+    #github-link {
+        color: #6699ff;
+        text-decoration: none;
+    }
+    #linked-in-link{
+        color: #3377ff;
+        text-decoration: none;
+    }
+    #email-link{
+        color: #0055ff;
+        text-decoration: none;
+    }
+
+    .about{
+        text-align: center;
+        background: lightgrey;
+        border: 1px solid black;
+
+    }
+    #city{
+        display: block;
+        max-width: 250px;
+        float: right;
+        margin-top: 120px;
+        padding: 8px;
+
+    }
+    .about h1{
+        font-size: 32px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 140px;
+        
+    }
+
+    .about h3{
+        font-size: 14px;
+        font-family: sans-serif;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .about h4{
+        font-size: 14px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+
+    }
+
+    .about h2{
+        font-family: serif;
+        font-size: 24px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .hidden{
+        display:none;
+    }
+
+    .about h2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .projects{
+        background: silver;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .center{
+        list-style-type: none;
+        text-align: center;
+    }
+    .mailto-link{
+        color: black;
+        text-decoration: none;
+    }
+    .screenshot{
+        max-width: 250px;
+    }
+    .projects{
+        background: lightgrey;
+    }
+    .projects h1{
+        font-family: serif;
+        font-size: 32px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .projects h2{
+        font-family: sans-serif;
+        font-size: 24px;
+
+    }
+    .technologies-used{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon{
+        max-width: 30px;
+        max-height: 30px;
+        margin-left: 10px;
+    }
+    .project-info h3{
+        font-size: 14px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+    }
+    .see-code-button{
+        background-color: rgb(5, 172, 5);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    .use-demo-button{
+        background-color: rgb(42, 170, 212);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
 }
 
-.about{
-    text-align: center;
-    background: white;
-    border: 3px solid black;
 
+
+
+
+@media  screen and (min-width:561px) and (max-width: 900px){
+    header{
+        background: black;
+        color: silver;
+        border: 3px solid black;
+        max-height: 120px;
+        margin-top: 0;
+
+    }
+
+    #full-name{
+        text-align: center;
+        font-family: serif;
+    }
+
+    #nav ul{
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #nav li{
+        display: inline-flex;
+    }
+    
+    #about-nav{
+        color: #ccddff;
+        text-decoration: none;
+    }
+    #projects-nav{
+        color: #99bbff;
+        text-decoration: none;
+    }
+    #github-link {
+        color: #6699ff;
+        text-decoration: none;
+    }
+    #linked-in-link{
+        color: #3377ff;
+        text-decoration: none;
+    }
+    #email-link{
+        color: #0055ff;
+        text-decoration: none;
+    }
+
+    .about{
+        text-align: center;
+        background: lightgrey;
+        border: 1px solid black;
+
+    }
+    #city{
+        display: block;
+        max-width: 350px;
+        float: right;
+        margin-top: 120px;
+        padding: 8px;
+
+    }
+    .about h1{
+        font-size: 32px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 140px;
+        
+    }
+
+    .about h3{
+        font-size: 14px;
+        font-family: sans-serif;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .about h4{
+        font-size: 14px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+
+    }
+
+    .about h2{
+        font-family: serif;
+        font-size: 24px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .hidden{
+        display:none;
+    }
+
+    .about h2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .projects{
+        background: silver;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .center{
+        list-style-type: none;
+        text-align: center;
+    }
+    .mailto-link{
+        color: black;
+        text-decoration: none;
+    }
+    .screenshot{
+        max-width: 400px;
+    }
+    .projects{
+        background: lightgrey;
+    }
+    .projects h1{
+        font-family: serif;
+        font-size: 32px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .projects h2{
+        font-family: sans-serif;
+        font-size: 24px;
+
+    }
+    .technologies-used{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon{
+        max-width: 30px;
+        max-height: 30px;
+        margin-left: 10px;
+    }
+    .project-info h3{
+        font-size: 14px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+    }
+    .see-code-button{
+        background-color: rgb(5, 172, 5);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    .use-demo-button{
+        background-color: rgb(42, 170, 212);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
 }
-.projects{
-    background: grey;
-    text-align: center;
-    border: 3px solid black;
-}
-.center{
-    list-style-type: none;
-    text-align: center;
-}
-.mailto-link{
-    color: black;
-    text-decoration: none;
+
+
+
+
+@media  screen and (min-width:901px){
+    header{
+        background: black;
+        color: silver;
+        border: 3px solid black;
+        max-height: 120px;
+        margin-top: 0;
+
+    }
+
+    #full-name{
+        text-align: center;
+        font-family: serif;
+        font-size: 36px;
+    }
+
+    #nav ul{
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #nav li{
+        display: inline-flex;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+    }
+    
+    #about-nav{
+        color: #ccddff;
+        text-decoration: none;
+    }
+    #projects-nav{
+        color: #99bbff;
+        text-decoration: none;
+    }
+    #github-link {
+        color: #6699ff;
+        text-decoration: none;
+    }
+    #linked-in-link{
+        color: #3377ff;
+        text-decoration: none;
+    }
+    #email-link{
+        color: #0055ff;
+        text-decoration: none;
+    }
+
+    .about{
+        text-align: center;
+        background: lightgrey;
+        border: 1px solid black;
+
+    }
+    #city{
+        
+        max-width: 550px;
+        justify-content: center;
+        margin-top: 40px;
+        padding: 8px;
+
+    }
+    .about h1{
+        font-size: 36px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 40px;
+        
+    }
+
+    .about h3{
+        font-size: 16px;
+        font-family: sans-serif;
+        padding: 18px;
+        text-align: left;
+    }
+
+    .about h4{
+        font-size: 14px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+
+    }
+
+    .about h2{
+        font-family: serif;
+        font-size: 24px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .hidden{
+        display:none;
+    }
+
+    .about h2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .projects{
+        background: silver;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .center{
+        list-style-type: none;
+        text-align: center;
+    }
+    .mailto-link{
+        color: black;
+        text-decoration: none;
+    }
+    .screenshot{
+        max-width: 550px;
+    }
+    .projects{
+        background: lightgrey;
+    }
+    .projects h1{
+        font-family: serif;
+        font-size: 36px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+    }
+    .projects h2{
+        font-family: sans-serif;
+        font-size: 24px;
+
+    }
+    .technologies-used{
+        justify-content: center;
+    }
+    .icon{
+        max-width: 30px;
+        max-height: 30px;
+        margin-left: 10px;
+    }
+    .project-info h3{
+        font-size: 16px;
+        text-align: center;
+        padding: 8px;
+        font-family: sans-serif;
+    }
+    .see-code-button{
+        background-color: rgb(5, 172, 5);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    .use-demo-button{
+        background-color: rgb(42, 170, 212);
+        width: 100px;
+        font-size: 14px;
+        font-family: sans-serif;
+        margin-bottom: 25px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
 }

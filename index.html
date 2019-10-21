@@ -13,29 +13,29 @@
             Alex J. Hidalgo
         </h1>
 
-        <nav ref="nav">
+        <nav id="nav">
 
             <ul>
 
-                <li id="about-nav">About</li>
+                <li> <a id="about-nav" class="jumper" href="#about-text">About</a></li>
 
-                <li id="projects-nav">Projects</li>
+                <li> <a id="projects-nav" class="jumper" href="#projects-section">Projects</a></li>
 
                 <li id="github-li"> 
 
-                    <a id="github-link" class="jumper">Github</a>
+                    <a id="github-link" class="link" href="https://github.com/aalexmann" >Github</a>
                     
                 </li>
 
                 <li id="linked-in-li">
 
-                    <a id="linked-in-link" class="jumper">Linkedin</a>
+                    <a id="linked-in-link" class="link" href="https://www.linkedin.com/in/alexjvh/">Linkedin</a>
 
                 </li>
 
                 <li id="email-li">
 
-                    <a id="email-link" class="jumper">E-mail</a>
+                    <a id="email-link" class="jumper" href="#footer">E-mail</a>
 
                 </li>
 
@@ -47,70 +47,75 @@
 
     <main class="container">
 
-        <section class="city-image">
-
-            <img id="city" alt="aerial-picture-of-city">
-
-        </section>
-
         <section class="about">
+
+            <section class="city-image">
+                <img id="city" alt="aerial-picture-of-city" src="echo-park.jpg">
+            </section>
 
             <div id="about-text">
 
                 <h1> About </h1>
 
-                <h2> A little about me: </h2>
+
                 
                 <h3>
-                    I am a software developer interested in witing code like I am Alexander Hamilton, running out of time.
+                    I am a software developer interested in maintaining, imagining, and creating software.
                     I have experience writing HTML5, CSS3, and JavaScript, as well as utilizing jQuery and web-based resources
-                    to get things done. I also love living in dynamic cities where I can work with and get to know interesting people.
+                    to get things done. I also love living in dynamic cities where I can work with interesting and motivated people. I love movies, music, and television, learning about the mysteries of the
+                    universe, and seeing what the human body is capable of (i.e. sports and human biology). Besides developing software, I am very keen on developing myself by learning new languages,
+                    mastering surfing and snowboarding, practicing guitar, and carpentry.
                 </h3>
 
-                <div id="optional-about-text">
+                <!-- <div id="optional-about-text" class="shown">
+
 
                     <h2> More about me: </h2>
 
-                    <h3>
+                    <h4>
                         I was born and raised in California and I love movies, music, and television, learning about the mysteries of the
                         universe, and seeing what the human body is capable of (i.e. sports and human biology). Alongside my goal to develop 
                         software as a career, I also aim to develop my self by never ceasing to learn new skills like speaking different languages,
                         surfing, playing guitar, or carpentry.
-                    </h3>
+                    </h4>
 
-                </div>
+                </div> -->
 
             </div>
 
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects-section">
 
             <h1> Projects </h1>
 
             <div class="project" id="project-1">
 
-                <img class="screenshot" alt="app-screenshot">
+                <img class="screenshot" alt="app-screenshot" src="quiz-screenshot.jpg">
 
                 <div class="project-info">
 
-                    <h2> Name of Project</h2>
+                    <h2> "Miscellaneous Pop Culture Quiz"</h2>
 
                     <div class="technologies-used">
-                        <svg></svg>
+                        <img class="icon" alt="js-icon" src="js-icon.jpg">
+                        <img class="icon" alt="html5-icon" src="html-icon.jpg">
+                        <img class="icon" alt="css3-icon" src="css3-icon.jpg">
+                        <img class="icon" alt="jquery-icon" src="jquery-icon.jpg">
                     </div>
 
                     <h3>
-                        Description of project goes here.
+                        Do you have a broad palette for pop culture? Take the quiz to see if you can complete these famous quotes from ten
+                        various movies/tv-shows.
                     </h3>
 
                     <div class="project-footer">
-                        <a class="see-code">
+                        <a class="see-code" href="https://github.com/aalexmann/quiz-app">
                             <button type="button" class="see-code-button">
                                 See Code
                             </button>
                         </a>
-                        <a class="use-demo">
+                        <a class="use-demo" href="https://aalexmann.github.io/quiz-app/">
                             <button type="button" class="use-demo-button">
                                 Use Demo
                             </button>
@@ -121,7 +126,7 @@
 
             </div>
 
-            <div class="project" id="project-2">
+            <!-- <div class="project" id="project-2">
 
                 <img class="screenshot" alt="app-screenshot">
 
@@ -185,7 +190,7 @@
                         
                 </div>
 
-            </div>
+            </div> -->
 
         </section>
 
@@ -200,6 +205,10 @@
         </ul>
 
     </footer>
-
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
