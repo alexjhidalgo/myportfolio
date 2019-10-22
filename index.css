@@ -79,7 +79,7 @@ body {
         
     }
 
-    .about h3{
+    #about-h3{
         font-size: 14px;
         font-family: sans-serif;
         padding: 8px;
@@ -151,7 +151,7 @@ body {
         max-height: 30px;
         margin-left: 10px;
     }
-    .project-info h3{
+    #project-h3{
         font-size: 14px;
         text-align: left;
         padding: 8px;
@@ -250,7 +250,7 @@ body {
         
     }
 
-    .about h3{
+    #about-h3{
         font-size: 14px;
         font-family: sans-serif;
         padding: 8px;
@@ -322,7 +322,7 @@ body {
         max-height: 30px;
         margin-left: 10px;
     }
-    .project-info h3{
+    #project-h3{
         font-size: 14px;
         text-align: left;
         padding: 8px;
@@ -423,7 +423,7 @@ body {
         
     }
 
-    .about h3{
+    #about-h3{
         font-size: 16px;
         font-family: sans-serif;
         padding: 18px;
@@ -494,7 +494,7 @@ body {
         max-height: 30px;
         margin-left: 10px;
     }
-    .project-info h3{
+    #project-h3{
         font-size: 16px;
         text-align: center;
         padding: 8px;
@@ -513,6 +513,14 @@ body {
         font-size: 14px;
         font-family: sans-serif;
         margin-bottom: 25px;
+    }
+    .see-code{
+        text-decoration: none;
+        color: black;
+    }
+    .use-demo{
+        text-decoration: none;
+        color: black;
     }
     button:hover{
         cursor: pointer;
