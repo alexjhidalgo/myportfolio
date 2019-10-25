@@ -97,7 +97,7 @@ body {
         font-size: 18px;
 
     }
-    #contact-info h1{
+    #contact-h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
@@ -144,8 +144,8 @@ body {
         padding: 8px;
 
     }
-    .about h1{
-        font-size: 32px;
+    #about-h1{
+        font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
@@ -196,12 +196,13 @@ body {
         padding: 8px;
     }
 
-    .projects h1{
+    #projects-h1{
         font-family: serif;
-        font-size: 32px;
+        font-size: 36px;
         display: flex;
         flex-flow: row;
         padding-left: 30px;
+        font-weight:bold;
     }
     .projects h2{
         font-family: sans-serif;
@@ -318,12 +319,13 @@ body {
         font-size: 18px;
 
     }
-    #contact-info h1{
+    #contact-h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
+        font-weight:bold;
     }
     #github-link {
         color:black;
@@ -364,13 +366,13 @@ body {
         padding: 8px;
 
     }
-    .about h1{
-        font-size: 32px;
+    #about-h1{
+        font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
-        
+        font-weight:bold;
     }
 
     #about-h3{
@@ -415,12 +417,13 @@ body {
         max-width: 250px;
     }
 
-    .projects h1{
+    #projects-h1{
         font-family: serif;
-        font-size: 32px;
+        font-size: 36px;
         display: flex;
         flex-flow: row;
         padding-left: 30px;
+        font-weight:bold;
     }
     .projects h2{
         font-family: sans-serif;
@@ -545,12 +548,13 @@ body {
         font-size: 22px;
 
     }
-    #contact-info h1{
+    #contact-h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
+        font-weight:bold;
     }
     #github-link {
         color:black;
@@ -591,13 +595,13 @@ body {
         padding: 8px;
 
     }
-    .about h1{
-        font-size: 32px;
+    #about-h1{
+        font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
-        
+        font-weight:bold;
     }
 
     #about-h3{
@@ -642,12 +646,13 @@ body {
         max-width: 400px;
     }
 
-    .projects h1{
+    #projects-h1{
         font-family: serif;
-        font-size: 32px;
+        font-size: 36px;
         display: flex;
         flex-flow: row;
         padding-left: 30px;
+        font-weight:bold;
     }
     .projects h2{
         font-family: sans-serif;
@@ -770,12 +775,13 @@ body {
         font-size: 18px;
 
     }
-    #contact-info h1{
+    #contact-h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
+        font-weight:bold;
     }
     #github-link {
         color:black;
@@ -813,13 +819,13 @@ body {
         padding: 8px;
 
     }
-    .about h1{
+    #about-h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
         margin-top: 40px;
-        
+        font-weight:bold;
     }
 
     #about-h3{
@@ -867,12 +873,13 @@ body {
         max-width: 550px;
     }
 
-    .projects h1{
+    #projects-h1{
         font-family: serif;
         font-size: 36px;
         display: flex;
         flex-flow: row;
         padding-left: 30px;
+        font-weight:bold;
     }
     .projects h2{
         font-family: sans-serif;
