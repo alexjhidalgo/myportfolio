@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio for Alex J. Hidalgo</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,33 +13,26 @@
             Alex J. Hidalgo
         </h1>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         <nav id="nav">
 
-            <ul>
+            <a href="#home" class="active"></a>
 
-                <li> <a id="about-nav" class="jumper" href="#about-text">About</a></li>
+            <div id="myLinks">
 
-                <li> <a id="projects-nav" class="jumper" href="#projects-section">Projects</a></li>
+                <a id="about-nav" class="jumper" href="#about-text">About</a>
 
-                <li id="github-li"> 
+                <a id="projects-nav" class="jumper" href="#projects-section">Projects</a>
 
-                    <a id="github-link" class="link" href="https://github.com/aalexmann" >Github</a>
-                    
-                </li>
+                <a id="contact-link" class="jumper" href="#contact-info">Contact</a>
 
-                <li id="linked-in-li">
+            </div>
 
-                    <a id="linked-in-link" class="link" href="https://www.linkedin.com/in/alexjvh/">Linkedin</a>
-
-                </li>
-
-                <li id="email-li">
-
-                    <a id="email-link" class="jumper" href="#footer">E-mail</a>
-
-                </li>
-
-            </ul>
+            <a href="javascript:void(0);" class="hammy" id="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
         </nav>
 
@@ -66,20 +59,6 @@
                     universe, and seeing what the human body is capable of (i.e. sports and human biology). Besides developing software, I am very keen on developing myself by learning new languages,
                     mastering surfing and snowboarding, practicing guitar, and carpentry.
                 </p>
-
-                <!-- <div id="optional-about-text" class="shown">
-
-
-                    <h2> More about me: </h2>
-
-                    <h4>
-                        I was born and raised in California and I love movies, music, and television, learning about the mysteries of the
-                        universe, and seeing what the human body is capable of (i.e. sports and human biology). Alongside my goal to develop 
-                        software as a career, I also aim to develop my self by never ceasing to learn new skills like speaking different languages,
-                        surfing, playing guitar, or carpentry.
-                    </h4>
-
-                </div> -->
 
             </div>
 
@@ -109,22 +88,22 @@
                         various movies/tv-shows.
                     </p>
 
-                    <div class="project-footer">
+                    <div id="project-footer">
                         
-                        <button type="button" class="see-code-button">
-                            <a class="see-code" href="https://github.com/aalexmann/quiz-app">
+                   
+                            <a class="see-code" href="https://github.com/aalexmann/quiz-app"target="_blank">
                                 See Code
                             </a>
                         
-                        </button>
+                      
 
-                        <button type="button" class="use-demo-button">
-                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/">
+                        
+                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/"target="_blank">
                                 Use Demo
                             </a>
                             
                                 
-                        </button>
+                       
                         
                     </div>
 
@@ -132,83 +111,36 @@
 
             </div>
 
-            <!-- <div class="project" id="project-2">
+        </section>
 
-                <img class="screenshot" alt="app-screenshot">
+        <section id="contact-info">
 
-                <div class="project-info">
+            <h1> Contact </h1>
 
-                    <h2> Name of Project</h2>
-                    
-                    <div class="technologies-used">
-                        <svg></svg>
-                    </div>
+            <ul id="contact">
 
-                    <h3>
-                        Description of project goes here.
-                    </h3>
+                    <li id="github-li"> 
 
-                    <div class="project-footer">
-                        <a class="see-code">
-                            <button type="button" class="see-code-button">
-                                See Code
-                            </button>
-                        </a>
-                        <a class="use-demo">
-                            <button type="button" class="use-demo-button">
-                                Use Demo
-                            </button>
-                        </a>
-                    </div>
+                        <a id="github-link" class="link" href="https://github.com/aalexmann" target="_blank">Github</a>
+                            
+                    </li>
+        
+                    <li id="linked-in-li">
+        
+                        <a id="linked-in-link" class="link" href="https://www.linkedin.com/in/alexjvh/" target="_blank">Linkedin</a>
+        
+                    </li>
+                    <li>
 
-                </div>
-
-            </div>
-
-            <div class="project" id="project-3">
-
-                <img class="screenshot" alt="app-screenshot">
-
-                <div class="project-info">
-
-                    <h2> Name of Project</h2>
-
-                    <div class="technologies-used">
-                        <svg></svg>
-                    </div>
-
-                    <h3>
-                        Description of the project goes here.
-                    </h3>
-
-                    <div class="project-footer">
-                        <a class="see-code">
-                            <button type="button" class="see-code-button">
-                                See Code
-                            </button>
-                        </a>
-                        <a class="use-demo">
-                            <button type="button" class="use-demo-button">
-                                Use Demo
-                            </button>
-                        </a>
-                    </div>
-                        
-                </div>
-
-            </div> -->
+                        <a id="mailto-link" href="mailto:alexjhidalgo@icloud.com">alexjhidalgo@icloud.com</a>
+    
+                    </li>
+            </ul>
 
         </section>
 
     </main>
 
-    <footer id="footer">
-
-        <ul class="center">
-            <li><a class="mailto-link" href="mailto:alexjhidalgo@icloud.com">alexjhidalgo@icloud.com</a></li>
-        </ul>
-
-    </footer>
     <script
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
