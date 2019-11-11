@@ -3,934 +3,738 @@
 }
 
 body {
-    font-family: "roboto", sans-serif;
-    margin: 25px;
-    padding: 0;
     background-color: silver;
+    display: flexbox;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
-  @media  screen and (max-width: 400px){
+  /* Header */
+
+header{
+    background: black;
+    color: silver;
+    border: 3px solid black;
+    max-height: 120px;
+    display: flexbox;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 40px;
+}
+header h1{
+    font-family: serif;
+    font-size: 32px;
+    display: flexbox;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+ #myLinks {
+    display: none;
+}
+#myLinksBig{
+    display: none;
+}
+.topnav a {
+    color: grey;
+    padding: 15px;
+    display: block;
+}
+.topnav a.icon {
+    background: black;
+    color: grey;
+    display: flexbox;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+.topnav a.icon:hover {
+    background-color: black;
+    color: grey;
+}
+.active {
+    background-color: black;
+    color: grey;
+}
+#myLinks{
+    list-style: none;
+    font-family: sans-serif;
+    display: none;
+}
+#myLinks a{
+    display: flexbox;
+}
+
+#about-nav{
+    color: #ccddff;
+    text-decoration: none;
+}
+#projects-nav{
+    text-decoration: none;
+    color: #99bbff;
+}
+#contact-link{
+    color: #0055ff;
+    text-decoration: none;
+}
+
+  /* Image */
+
+  #city{
+    justify-content: center;
+    max-width: 200px;
+    margin-top: 40px;
+    padding: 8px;
+}
+
+  /* About */
+
+.about{
+    text-align: center;
+    background: lightgrey;
+    border: 1px solid black;
+    margin-bottom: 25px;
+
+}
+
+.about h1{
+    font-size: 32px;
+    display:flex;
+    padding-left: 30px;
+    font-family: serif;
+    margin-top: 40px;    
+}
+
+.about p{
+    font-size: 16px;
+    line-height: 20px;
+    font-family: sans-serif;
+    padding: 8px;
+    text-align: left;
+}
+
+  /* Projects */
+.headerdivider {
+    border-top: 1px groove grey;
+    border-bottom: 1px groove grey;
+    width: 90%;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects{
+    background: lightgrey;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.projects h1{
+    font-family: serif;
+    font-size: 32px;
+    display: flex;
+    flex-flow: row;
+    padding-left: 30px;
+    margin-bottom: 50px;
+
+}
+.screenshot{
+    max-width: 240px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.projects h2{
+    font-family: sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.technologies-used{
+    display: flex;
+    flex-direction: row;
+}
+.t-icon{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 10px;
+}
+.project p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding: 8px;
+    font-family: sans-serif;
+}
+#project-footer{
+    margin-bottom: 20px;
+}
+.see-code{
+    background-color: rgb(72, 177, 72);
+    width: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    padding: 7px;
+    border: 3px groove rgb(44, 214, 44);
+}
+.use-demo{
+    background-color: rgb(42, 170, 212);
+    width: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    padding: 7px;
+    border: 3px groove rgb(113, 172, 192);
+}
+.code-links a:hover{
+    border: 3px groove orange;
+}
+  /* Contact */
+
+.contact{
+    background-color: grey;
+    border: solid 1px black;
+}
+.contact h1{
+    font-size: 32px;
+    display:flex;
+    padding-left: 30px;
+    font-family: serif;
+    margin-top: 40px;
+}
+.contact p{
+    font-size: 16px;
+    line-height: 20px;
+    font-family: sans-serif;
+    padding: 8px;
+    text-align: left;
+}
+.contact-link:hover{
+    color: rgb(111, 111, 223);
+}
+.contact ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+.contact li{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+}
+#github-link {
+    color:#ccddff;
+    text-decoration: none;
+}
+#linked-in-link{
+    color: #99bbff;
+    text-decoration: none;
+}
+#mailto-link{
+    color: #0055ff;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 720px){
+    body {
+        background-color: silver;
+        display: flexbox;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 8%;
+        margin-right: 8%;
+      }
+    
+      /* Header */
+    
     header{
         background: black;
         color: silver;
         border: 3px solid black;
-        max-height: 127px;
-        margin-top: 0;
-
+        max-height: 120px;
+        display: flexbox;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 40px;
     }
-    #nav {
+    
+    header h1{
+        font-family: serif;
+        font-size: 34px;
+        display: flexbox;
+    }
+    .topnav {
         overflow: hidden;
         background-color: #333;
         position: relative;
-      }
-
-    #nav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+    }
+    #myLinks {
+        display: none;
+    }
+    #myLinksBig{
+        display: none;
+    }
+    .topnav a {
+        color: grey;
+        padding: 15px;
         display: block;
     }
-    /* #nav a.icon {
+    .topnav a.icon {
         background: black;
-        display: block;
+        color: grey;
+        display: flexbox;
         position: absolute;
         right: 0;
         top: 0;
-    } */
-    #nav a:hover {
-        background-color: #ddd;
-        color: black;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    .topnav a.icon:hover {
+        background-color: black;
+        color: grey;
     }
     .active {
         background-color: black;
-        color: white;
+        color: grey;
+    }
+    #myLinks{
+        list-style: none;
+        font-family: sans-serif;
+        display: none;
+    }
+    #myLinks a{
+        display: flexbox;
+    }
+    
+    #about-nav{
+        color: #ccddff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    #projects-nav{
+        text-decoration: none;
+        color: #99bbff;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    #contact-link{
+        color: #0055ff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    
+      /* Image */
+    
+      #city{
+        justify-content: center;
+        max-width: 300px;
+        margin-top: 40px;
+        padding: 8px;
+    }
+    
+      /* About */
+    
+    .about{
+        text-align: center;
+        background: lightgrey;
+        border: 1px solid black;
+        margin-bottom: 25px;
+    
+    }
+    
+    .about h1{
+        font-size: 34px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 40px;    
+    }
+    
+    .about p{
+        font-size: 18px;
+        line-height: 22px;
+        font-family: sans-serif;
+        padding: 8px;
+        text-align: left;
+    }
+    
+      /* Projects */
+    .headerdivider {
+        border-top: 1px groove grey;
+        border-bottom: 1px groove grey;
+        width: 90%;
+        height: 1px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects{
+        background: lightgrey;
+        text-align: center;
+        border: 1px solid black;
+        margin-bottom: 25px;
+    }
+    .projects h1{
+        font-family: serif;
+        font-size: 34px;
+        display: flex;
+        flex-flow: row;
+        padding-left: 30px;
+        margin-bottom: 70px;
+
+    }
+    .screenshot{
+        max-width: 340px;
+        padding: 8px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .projects h2{
+        font-family: sans-serif;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+    .technologies-used{
+        display: flex;
+        flex-direction: row;
+    }
+    .t-icon{
+        max-width: 30px;
+        max-height: 30px;
+        margin-left: 10px;
+    }
+    .project p{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        padding: 8px;
+        font-family: sans-serif;
+    }
+    #project-footer{
+        margin-bottom: 20px;
+    }
+    .see-code{
+        background-color: rgb(72, 177, 72);
+        width: 100px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: black;
+        margin-right: 5px;
+        padding: 7px;
+        border: 3px groove rgb(44, 214, 44);
+    }
+    .use-demo{
+        background-color: rgb(42, 170, 212);
+        width: 100px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: black;
+        margin-left: 5px;
+        padding: 7px;
+        border: 3px groove rgb(113, 172, 192);
+    }
+    .code-links a:hover{
+        border: 3px groove orange;
+    }
+      /* Contact */
+      
+    .contact{
+        background-color: grey;
+        border: solid 1px black;
+    }
+    .contact h1{
+        font-size: 34px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 40px;
+    }
+    .contact p{
+        font-size: 18px;
+        line-height: 22px;
+        font-family: sans-serif;
+        padding: 8px;
+        text-align: left;
+    }
+    .contact-link:hover{
+        color: rgb(111, 111, 223);
+    }
+    .contact ul{
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    .contact li{
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #github-link {
+        color:#ccddff;
+        text-decoration: none;
+    }
+    #linked-in-link{
+        color: #99bbff;
+        text-decoration: none;
+    }
+    #mailto-link{
+        color: #0055ff;
+        text-decoration: none;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 720px){
+    body {
+        background-color: silver;
+        display: flexbox;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 8%;
+        margin-right: 8%;
       }
-
+    
+      /* Header */
+    
+    header{
+        background: black;
+        color: silver;
+        border: 3px solid black;
+        margin-bottom: 40px;
+        font-family: serif;
+        display: flexbox;
+        flex-wrap: wrap;
+    }
     #full-name{
-        text-align: center;
+        color: silver;
         font-family: serif;
         font-size: 36px;
     }
-
-    #myLinks{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
+    .topnav{
         display: none;
     }
-
-    #myLinks a{
-        display: inline-flex;
-    }
-    
+    #myLinksBig{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+    }  
     #about-nav{
         color: #ccddff;
         text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
     }
     #projects-nav{
         text-decoration: none;
         color: #99bbff;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     #contact-link{
         color: #0055ff;
         text-decoration: none;
         font-family: sans-serif;
-    }
-
-    #contact-info{
-        background-color: lightgrey;
-        border: solid 1px black;
-    }
-    #contact-info ul{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        list-style-type:none;
-
-    }
-
-    #contact-info li{
-        display: inline-flex;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 18px;
-
-    }
-    #contact-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-    }
-    #github-link {
-        color:black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #linked-in-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #mailto-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        font-size:16px;
-    }
-
-
-
-    .about{
-        text-align: center;
-        background: lightgrey;
-        border: 1px solid black;
-        margin-bottom: 25px;
-
-    }
-    #city{
-        /* display: block; */
-        justify-content: center;
-        max-width: 200px;
-        /* float: right; */
-        margin-top: 40px;
-        padding: 8px;
-
-    }
-    #about-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-        
-    }
-
-    #about-h3{
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 8px;
-        text-align: left;
-    }
-
-    .about h4{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-
-    }
-
-    .about h2{
-        font-family: serif;
-        font-size: 24px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-    }
-    .hidden{
-        display:none;
-    }
-
-    .about h2:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .projects{
-        background: lightgrey;
-        text-align: center;
-        border: 1px solid black;
-        margin-bottom: 25px;
-    }
-
-    .screenshot{
-        max-width: 200px;
-        padding: 8px;
-    }
-
-    #projects-h1{
-        font-family: serif;
-        font-size: 36px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-        font-weight:bold;
-    }
-    .projects h2{
-        font-family: sans-serif;
-        font-size: 24px;
-
-    }
-    .technologies-used{
-        display: flex;
-        flex-direction: row;
-    }
-    .hammy{
-        max-width: 30px;
-        max-height: 30px;
-        margin-left: 10px;
-        color: lightgrey;
-    }
-    .icon{
-        max-width: 30px;
-        max-height: 30px;
-        margin-left: 10px;
-    }
-    #project-h3{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-    }
-    #project-footer{
-        margin-bottom: 20px;
-    }
-    .see-code{
-        background-color: rgb(5, 172, 5);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: black;
-        margin-right:2px;
-        padding: 2px;
-    }
-    .use-demo{
-        background-color: rgb(42, 170, 212);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: black;
-        margin-right:2px;
-        padding: 2px;
-    }
-    button:hover{
-        cursor: pointer;
-    }
-}
-
-@media  screen and (min-width: 400px) and (max-width: 634px){
-    header{
-        background: black;
-        color: silver;
-        border: 3px solid black;
-        max-height: 127px;
-        margin-top: 0;
-
-    }
-
-    #full-name{
-        text-align: center;
-        font-family: serif;
-        font-size: 36px;
-    }
-
-    #myLinks{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        display: none;
-    }
-
-    #myLinks a{
-        display: inline-flex;
-
-    }
-    
-    #about-nav{
-        color: #ccddff;
-        text-decoration: none;
-    }
-    #projects-nav{
-        text-decoration: none;
-        color: #99bbff;
-    }
-    #contact-link{
-        color: #0055ff;
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-
-    #contact-info{
-        background-color: lightgrey;
-        border: solid 1px black;
-    }
-    #contact-info ul{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        list-style-type:none;
-
-    }
-
-    #contact-info li{
-        display: inline-flex;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 18px;
-
-    }
-    #contact-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-        font-weight:bold;
-    }
-    #github-link {
-        color:black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #linked-in-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #mailto-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-    }
-
-
-
-    .about{
-        text-align: center;
-        background: lightgrey;
-        border: 1px solid black;
-        margin-bottom: 25px;
-
-    }
-    #city{
-        /* display: block; */
-        justify-content: center;
-        max-width: 200px;
-        /* float: right; */
-        margin-top: 40px;
-        padding: 8px;
-
-    }
-    #about-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-        font-weight:bold;
-    }
-
-    #about-h3{
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 8px;
-        text-align: left;
-    }
-
-    .about h4{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-
-    }
-
-    .about h2{
-        font-family: serif;
-        font-size: 24px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-    }
-    .hidden{
-        display:none;
-    }
-
-    .about h2:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .projects{
-        background: lightgrey;
-        text-align: center;
-        border: 1px solid black;
-        margin-bottom: 25px;
-    }
-
-    .screenshot{
-        max-width: 250px;
-    }
-
-    #projects-h1{
-        font-family: serif;
-        font-size: 36px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-        font-weight:bold;
-    }
-    .projects h2{
-        font-family: sans-serif;
-        font-size: 24px;
-
-    }
-    .technologies-used{
-        display: flex;
-        flex-direction: row;
-    }
-    .hammy{
-        max-width: 30px;
-        max-height: 30px;
-        margin-left: 10px;
-        color: lightgrey;
-    }
-    .icon{
-        max-width: 30px;
-        max-height: 30px;
-        margin-left: 10px;
-    }
-    
-    #project-h3{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-    }
-    #project-footer{
-        margin-bottom: 20px;
-    }
-    .see-code{
-        background-color: rgb(5, 172, 5);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: black;
-        margin-right:2px;
-        padding: 2px;
-    }
-    .use-demo{
-        background-color: rgb(42, 170, 212);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: black;
-        margin-right:2px;
-        padding: 2px;
-    }
-    button:hover{
-        cursor: pointer;
-    }
-}
-
-
-
-
-
-@media  screen and (min-width:634px) and (max-width: 900px){
-    header{
-        background: black;
-        color: silver;
-        border: 3px solid black;
-        max-height: 127px;
-        margin-top: 0;
-
-    }
-
-    #full-name{
-        text-align: center;
-        font-family: serif;
-        font-size: 36px;
-    }
-
-    #myLinks{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        
-    }
-
-    #myLinks a{
-        display: inline-flex;
-        padding-left: 20px;
-        padding-right: 20px;
         font-size: 20px;
     }
     
-    #about-nav{
-        color: #ccddff;
-        text-decoration: none;
-    }
-    #projects-nav{
-        color: #99bbff;
-        text-decoration: none;
-        
-    }
-    #contact-link{
-        color: #0055ff;
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-
-    #contact-info{
-        background-color: lightgrey;
-        border: solid 1px black;
-    }
-    #contact-info ul{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        list-style-type:none;
-
-    }
-
-    #contact-info li{
-        display: inline-flex;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 22px;
-
-    }
-    #contact-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
+      /* Image */
+    
+      #city{
+        justify-content: center;
+        max-width: 500px;
         margin-top: 40px;
-        font-weight:bold;
+        padding: 8px;
     }
-    #github-link {
-        color:black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #linked-in-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #mailto-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-
-
+    
+      /* About */
+    
     .about{
         text-align: center;
         background: lightgrey;
         border: 1px solid black;
         margin-bottom: 25px;
-
+    
     }
-    #city{
-        /* display: block; */
-        justify-content: center;
-        max-width: 350px;
-        /* float: right; */
-        margin-top: 40px;
-        padding: 8px;
-
-    }
-    #about-h1{
+    
+    .about h1{
         font-size: 36px;
         display:flex;
         padding-left: 30px;
         font-family: serif;
-        margin-top: 40px;
-        font-weight:bold;
+        margin-top: 40px;    
     }
-
-    #about-h3{
-        font-size: 16px;
+    
+    .about p{
+        font-size: 20px;
+        line-height: 26px;
         font-family: sans-serif;
-        padding: 8px;
+        padding: 16px;
         text-align: left;
     }
-
-    .about h4{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-
+    
+      /* Projects */
+    .headerdivider {
+        border-top: 1px groove grey;
+        border-bottom: 1px groove grey;
+        width: 90%;
+        height: 1px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .about h2{
-        font-family: serif;
-        font-size: 24px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-    }
-    .hidden{
-        display:none;
-    }
-
-    .about h2:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
     .projects{
         background: lightgrey;
         text-align: center;
         border: 1px solid black;
         margin-bottom: 25px;
     }
-
-    .screenshot{
-        max-width: 400px;
-    }
-
-    #projects-h1{
+    .projects h1{
         font-family: serif;
         font-size: 36px;
         display: flex;
         flex-flow: row;
         padding-left: 30px;
-        font-weight:bold;
+        margin-bottom: 100px;
+    }
+    .screenshot{
+        max-width: 540px;
+        padding: 8px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .projects h2{
         font-family: sans-serif;
-        font-size: 24px;
-
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 30px;
     }
     .technologies-used{
         display: flex;
         flex-direction: row;
+        margin-left: 50px;
     }
-    .icon{
-        max-width: 30px;
-        max-height: 30px;
+    .t-icon{
+        max-width: 36px;
+        max-height: 36px;
         margin-left: 10px;
     }
-
-    #hamburger{
-        display:none;
-    }
-    #project-h3{
-        font-size: 16px;
+    .project p{
+        font-size: 20px;
+        line-height: 26px;
         text-align: left;
-        padding: 8px;
+        padding: 16px;
         font-family: sans-serif;
+        margin-bottom: 35px;
     }
     #project-footer{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .see-code{
-        background-color: rgb(5, 172, 5);
+        background-color: rgb(72, 177, 72);
         width: 100px;
-        font-size: 16px;
+        font-size: 20px;
         font-family: sans-serif;
-        padding: 5px;
         text-decoration: none;
         color: black;
-        margin-right:2px;
-        
+        margin-right: 5px;
+        padding: 7px;
+        border: 3px groove rgb(44, 214, 44);
     }
     .use-demo{
         background-color: rgb(42, 170, 212);
         width: 100px;
-        font-size: 16px;
+        font-size: 20px;
         font-family: sans-serif;
-        padding: 5px;
         text-decoration: none;
         color: black;
-        margin-right:2px;
+        margin-left: 5px;
+        padding: 7px;
+        border: 3px groove rgb(113, 172, 192);
     }
-    button:hover{
-        cursor: pointer;
+    .code-links a:hover{
+        border: 3px groove orange;
     }
-}
-
-
-
-
-@media  screen and (min-width:901px){
-    header{
-        background: black;
-        color: silver;
-        border: 3px solid black;
-        max-height: 127px;
-        margin-top: 0;
-
+      /* Contact */
+      
+    .contact{
+        background-color: grey;
+        border: solid 1px black;
     }
-
-    #full-name{
-        text-align: center;
-        font-family: serif;
+    .contact h1{
         font-size: 36px;
+        display:flex;
+        padding-left: 30px;
+        font-family: serif;
+        margin-top: 40px;
     }
-
-    #myLinks{
+    .contact p{
+        font-size: 20px;
+        line-height: 26px;
+        font-family: sans-serif;
+        padding: 16px;
+        text-align: left;
+    }
+    .contact-link:hover{
+        color: rgb(111, 111, 223);
+    }
+    .contact ul{
         list-style: none;
         text-align: center;
         padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
     }
-
-    #myLinks a{
-        display: inline-flex;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 24px;
+    .contact li{
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    
-    #about-nav{
-        color: #ccddff;
+    #github-link {
+        color:#ccddff;
         text-decoration: none;
     }
-    #projects-nav{
+    #linked-in-link{
         color: #99bbff;
         text-decoration: none;
     }
-
-    #contact-link{
+    #mailto-link{
         color: #0055ff;
         text-decoration: none;
-        font-family: sans-serif;
-    }
-
-
-
-    #contact-info{
-        background-color: lightgrey;
-        border: solid 1px black;
-    }
-    #contact-info ul{
-        list-style: none;
-        text-align: center;
-        padding-left: 0;
-        list-style-type:none;
-
-    }
-
-    #contact-info li{
-        display: inline-flex;
-        padding-left: 60px;
-        padding-right: 60px;
-        font-size: 18px;
-
-    }
-    #contact-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-        font-weight:bold;
-    }
-    #github-link {
-        color:black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #linked-in-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
-    }
-    #mailto-link{
-        color: black;
-        text-decoration: none;
-        font-family: sans-serif;
-        padding: 3px;
-        border: solid 1px black;
     }
     
-    .about{
-        text-align: center;
-        background: lightgrey;
-        border: 1px solid black;
-        margin-bottom: 25px;
-    }
-    #city{
-        
-        max-width: 550px;
-        justify-content: center;
-        margin-top: 40px;
-        padding: 8px;
-
-    }
-    #about-h1{
-        font-size: 36px;
-        display:flex;
-        padding-left: 30px;
-        font-family: serif;
-        margin-top: 40px;
-        font-weight:bold;
-    }
-
-    #about-h3{
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 18px;
-        text-align: left;
-    }
-
-    .about h4{
-        font-size: 16px;
-        text-align: left;
-        padding: 8px;
-        font-family: sans-serif;
-
-    }
-
-    .about h2{
-        font-family: serif;
-        font-size: 24px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-    }
-    .hidden{
-        display:none;
-    }
-
-    .about h2:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .projects{
-        background: lightgrey;
-        text-align: center;
-        border: 1px solid black;
-        margin-bottom:25px;
-    }
-
-
-    
-
-    .screenshot{
-        max-width: 550px;
-    }
-
-    #projects-h1{
-        font-family: serif;
-        font-size: 36px;
-        display: flex;
-        flex-flow: row;
-        padding-left: 30px;
-        font-weight:bold;
-    }
-    .projects h2{
-        font-family: sans-serif;
-        font-size: 24px;
-
-    }
-    .technologies-used{
-        justify-content: center;
-    }
-    .icon{
-        max-width: 30px;
-        max-height: 30px;
-        margin-left: 10px;
-    }
-    #hamburger{
-        display:none;
-    }
-    #project-h3{
-        font-size: 16px;
-        text-align: center;
-        padding: 8px;
-        font-family: sans-serif;
-    }
-    #project-footer{
-        margin-bottom: 20px;
-    }
-    .see-code{
-        background-color: rgb(5, 172, 5);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-        margin-right:2px;
-        
-    }
-    .use-demo{
-        background-color: rgb(42, 170, 212);
-        width: 100px;
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-        margin-left:2px;
-
-    }
-
-    button:hover{
-        cursor: pointer;
-    }
-
 }
