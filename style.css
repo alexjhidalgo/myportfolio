@@ -76,11 +76,23 @@ header h1{
     color: #ccddff;
     text-decoration: none;
 }
+#about-nav2{
+    color: #ccddff;
+    text-decoration: none;
+}
 #projects-nav{
     text-decoration: none;
     color: #99bbff;
 }
+#projects-nav2{
+    text-decoration: none;
+    color: #99bbff;
+}
 #contact-link{
+    color: #0055ff;
+    text-decoration: none;
+}
+#contact-link2{
     color: #0055ff;
     text-decoration: none;
 }
@@ -174,7 +186,7 @@ header h1{
     padding: 8px;
     font-family: sans-serif;
 }
-#project-footer{
+.code-links{
     margin-bottom: 20px;
 }
 .see-code{
@@ -331,13 +343,31 @@ header h1{
         font-family: sans-serif;
         font-size: 18px;
     }
+    #about-nav2{
+        color: #ccddff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
     #projects-nav{
         text-decoration: none;
         color: #99bbff;
         font-family: sans-serif;
         font-size: 18px;
     }
+    #projects-nav2{
+        text-decoration: none;
+        color: #99bbff;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
     #contact-link{
+        color: #0055ff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    #contact-link2{
         color: #0055ff;
         text-decoration: none;
         font-family: sans-serif;
@@ -433,7 +463,7 @@ header h1{
         padding: 8px;
         font-family: sans-serif;
     }
-    #project-footer{
+    .code-links{
         margin-bottom: 20px;
     }
     .see-code{
@@ -553,6 +583,12 @@ header h1{
         font-family: sans-serif;
         font-size: 20px;
     }
+    #about-nav2{
+        color: #ccddff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
     #projects-nav{
         text-decoration: none;
         color: #99bbff;
@@ -561,7 +597,21 @@ header h1{
         padding-left: 40px;
         padding-right: 40px;
     }
+    #projects-nav2{
+        text-decoration: none;
+        color: #99bbff;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     #contact-link{
+        color: #0055ff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    #contact-link2{
         color: #0055ff;
         text-decoration: none;
         font-family: sans-serif;
@@ -660,7 +710,7 @@ header h1{
         font-family: sans-serif;
         margin-bottom: 35px;
     }
-    #project-footer{
+    .code-links{
         margin-bottom: 40px;
     }
     .see-code{
