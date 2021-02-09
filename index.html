@@ -4,86 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio for Alex J. Hidalgo</title>
+    <title>Alexandre Hidalgo Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="AHLogo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Icons/AHLogo.png"/>
 </head>
+
 <body>
+    
     <header>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <h1 id="full-name">
-                Alex J. Hidalgo
-        </h1>
-
-        <div id="myLinksBig">
-
-            <a id="about-nav" class="jumper" href="#about-text">About</a>
-
-            <a id="projects-nav" class="jumper" href="#projects-section">Projects</a>
-
-            <a id="contact-link" class="jumper" href="#contact-h1">Contact</a>
-
-        </div>
-
         <div class="topnav">
-
-            <a id="noMore" href="#home" aria-label="nav-bar" class="active"></a>
-            
+            <img id="logo" src="Icons/AHLogo.png">
             <div id="myLinks">
-
-                <a id="about-nav2" class="jumper" href="#about-text">About</a>
-
-                <a id="projects-nav2" class="jumper" href="#projects-section">Projects</a>
-
-                <a id="contact-link2" class="jumper" href="#contact-h1">Contact</a>
-
+              <a onclick="goToAboutMePage()">About</a>
+              <a onclick="goToProjectsPage()">Projects</a>
+              <a onclick="goToContactPage()">Contact</a>
+              <a href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
+              <a href="https://github.com/aalexmann" id="fa-github">GitHub</a>
+              <a href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
+              
             </div>
-
-            <a id="noMore2" href="javascript:void(0);" aria-label="nav-menu-expander" class="icon" onclick="myFunction()">
-
-                <i class="fa fa-bars"></i>
-
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
             </a>
-
+          </div>
+          <div class="header-actions">
+            <a id="fa-linkedin"></a>
+            <a id="fa-github"></a>
+            <a id="fa-email"></a>
         </div>
-
 
     </header>
 
-    <main class="container">
+    <main id="about-me-page" class="container" role="main">
 
-        <div class="about">
-                
-            <h1 id="about-h1"> About </h1>
-
-            <div id="about-text">
-
-                <div class="city-image">
-                    <img id="city" alt="aerial-picture-of-city" src="echo-park.jpg">
-                </div>
-
-                
-                <p id="about-h3">
-                    I am a software developer interested in maintaining, imagining, and creating software.
-                    I have experience writing HTML5, CSS3, and JavaScript, as well as utilizing jQuery and web-based resources
-                    to get things done. I also love living in dynamic cities where I can work with interesting and motivated people. I love movies, music, and television, learning about the mysteries of the
-                    universe, and seeing what the human body is capable of (i.e. sports and human biology). Besides developing software, I am very keen on developing myself by learning new languages,
-                    mastering surfing and snowboarding, practicing guitar, and carpentry.
-                </p>
-
+        <div class="content-wrapper">
+            <div class="content1">
+                <h2>
+                My name is Alexandre Joseph Hidalgo. I am currently working as a tech support specialist with SalesForce CRM.
+                When the case load is light I like to take on tasks like writing tests in JavaScript, pushing bug fixes to github,
+                and executing anonymous code in Apex.
+                </h2>
+                <p class="sqsrte-large" style="white-space:pre-wrap;"><em>Looking at Software Engineer Internships for Summer 2021</em></p>
+            </div>
+            <div class="content2">
+                <img id="desk" alt="picture-of-work-bench" src="Photos/work_desk.jpeg">
+                <p class="sqsrte-large" ><em>I spend most of the standard 8-5 workday at my work bench.
+                    Occasionally i'll go for a swim at the lap pool or cook some food. This setup is one of my greatest assets as it helps my workflow
+                    achieve optimum productivity.
+                </em></p>
+            </div>
+            <div class="content3">
+                <img id="grad_pic" alt="picture-of-me-with-classmate" src="Photos/grad_pic.jpg">
+                <p class="sqsrte-large" ><em>I graduated in 2019 from UCLA with a degree in Spanish. During my junior year, I became inspired by 6 roommates
+                    who were Computer Science Majors. They reminded me of why my first intended major as a freshman was CS as I took part in their app developments.
+                    Though I explored various disciplines, I am glad that the skills I developed to learn the Spanish language, syntax,
+                    and grammar can carry over into programming.
+                </em></p>
             </div>
 
         </div>
+
+        <footer>
+
+            <h3 style="white-space:pre-wrap;">I would love to hear from you. <a href="mailto:alexjhidalgo@icloud.com" target="_blank" tabindex="0">Reach me here.</a></h3>
+
+        </footer>
+    </main>
+
+
+
+
+
+
+
+
+    <div id="projects-page" class="container" role="page">
+        <h2 id="h2-contact" style="color: white;"> This page is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
+        </h2>
 
         <section class="projects" id="projects-section">
 
             <h1 id="projects-h1"> Projects </h1>
 
             <div class="project" id="project-1">
-
-                
 
                 <div class="project-info">
 
@@ -105,20 +110,13 @@
 
                     <div class="code-links">
                         
-                   
                             <a class="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
                                 See Code
                             </a>
-                        
-                      
-
-                        
+                    
                             <a class="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
                                 Use Demo
                             </a>
-                            
-                                
-                       
                         
                     </div>
 
@@ -126,131 +124,39 @@
 
             </div>
 
-            <div class="headerdivider"></div>
+    </div>
 
-            <div class="project" id="project-2">
-
-
-    
-                    <div class="project-info">
-    
-                        <h2> "Bright-Lights Big-City"</h2>
-    
-                        <div class="technologies-used">
-                            <img class="t-icon" alt="js-icon" src="js-icon.jpg">
-                            <img class="t-icon" alt="html5-icon" src="html-icon.jpg">
-                            <img class="t-icon" alt="css3-icon" src="css3-icon.jpg">
-                            <img class="t-icon" alt="jquery-icon" src="jquery-icon.jpg">
-                        </div>
-    
-                        <p>
-                            This is an app to get a quick view of relevant figures to a large city for people wanting to move there. The app briefs a user on cost of living, average salaries for 3 in-demand jobs, and general weather patterns. Data fetched from bls.gov, weatherbit, and geocode API's.
-                        </p>
-
-                        <img class="screenshot" alt="homescreen-of-app-screenshot2" src="homeScreen.jpg">
-
-                        <img class="screenshot" alt="model-page-of-app-screenshot" src="modelPage.jpg">
-    
-                        <div class="code-links">
-                            
-                       
-                                <a class="see-code" href="https://github.com/aalexmann/bigCity" target="_blank">
-                                    See Code
-                                </a>
-                            
-                          
-    
-                            
-                                <a class="use-demo" href="https://aalexmann.github.io/bigCity/" target="_blank">
-                                    Use Demo
-                                </a>
-                                
-                                    
-                           
-                            
-                        </div>
-    
-                    </div>
-    
-                </div>
-
-        </section>
-
-        <div class="contact">
-
-            <h1 id="contact-h1"> Contact </h1>
-
-            <p>From learning cheatcodes in videogames, to teaching friends of my parents new features on their phones, I have always found technology to be fun and interesting.</p>
-            
-            <br>
-
-            <p>I am currently looking for work and can be reached at the following links:</p>
-
-            <ul id="contact">
-
-                    <li id="github-li"> 
-
-                        <a id="github-link" aria-label="link-to-github-profile" class="contact-link" href="https://github.com/aalexmann" target="_blank">
-
-                            <i class="fa fa-github fa-2x" aria-hidden="true">  
-                            </i>   
-
-                        </a>
-
-                    </li>
-        
-                    <li id="linked-in-li">
-        
-                        <a id="linked-in-link" aria-label="link-to-linked-in-profile" class="contact-link" href="https://www.linkedin.com/in/alexjvh/" target="_blank">
-                        
-                            <i class="fa fa-linkedin fa-2x" aria-hidden="true">  
-                            </i> 
-
-                        </a>
-        
-                    </li>
-
-                    <li>
-
-                        <a id="mailto-link" aria-label="mailto link" class="contact-link" href="mailto:alexjhidalgo@icloud.com">
-                            
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true">  
-                            </i> 
-
-                        </a>
-    
-                    </li>
-            </ul>
-
+    <div id="contact-page">
+        <h2 id="h2-contact" style="color: white;"> This form is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
+        </h2>
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+          <p>Swing by for a cup of coffee, or leave me a message:</p>
         </div>
+        <div class="row">
+          <div class="column">
+            <img src="Photos/OSU_Header_Campus.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="company">Company</label>
+              <input type="text" id="company-name" name="company-name" placeholder="Your company name..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit" style="color:black">
+            </form>
+          </div>
+        </div>
+      </div>
 
-    </main>
-
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
 
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio for Alex J. Hidalgo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="AHLogo.png"/>
-</head>
-<body>
+<!-- <body>
     <header>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -258,7 +164,7 @@
         <h1 id="full-name">
                 Alexandre Hidalgo
                 <br>
-                Site Under Consruction. Major front-end changes coming soon!
+                
         </h1>
 
         <ul id="contact">
@@ -500,7 +406,6 @@
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
+    <script src="script.js"></script>
+</body> -->
 </html>
- -->
