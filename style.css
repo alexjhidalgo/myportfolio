@@ -5,8 +5,8 @@ body {
     background: black;
 }
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
 }
 
 .topnav {
@@ -40,3 +40,93 @@ body {
     color: black;
   }
   
+  .content1 {
+      font-weight: 400;
+      font-style: normal;
+      color: azure;
+      padding: 5%;
+      margin-top: 20px;
+      
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.2992;
+    font-size: calc((2.8 - 1) * 1.2vh + 1rem);
+}
+.sqsrte-large {
+    font-size: calc((1.5 - 1) * 1.2vh + 1rem);
+    color: #fff;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sqsrte-large, p, .sqsrte-small {
+    margin: 1rem 0;
+}
+
+.content2 {
+    margin-top: 240px;
+    display: block;
+}
+.content2 > p {
+    padding: 5%;
+}
+
+#desk {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 50px
+}
+
+#grad_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 50px
+}
+
+.content3 {
+    margin-top: 240px;
+    display: block;
+    margin-bottom: 200px;
+}
+.content3 > p {
+    padding: 5%;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: normal;
+    color: azure;
+    padding: 5%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: calc((1.5 - 1) * 1.2vh + 1rem);
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+h3 > a {
+    color: grey;
+    
+}
