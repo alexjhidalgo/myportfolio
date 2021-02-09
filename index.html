@@ -17,9 +17,9 @@
         <div class="topnav">
             <img id="logo" src="Icons/AHLogo.png">
             <div id="myLinks">
-              <a href="nav-about">About</a>
-              <a href="nav-projects">Projects</a>
-              <a href="nav-contact">Contact</a>
+              <a onclick="goToAboutMePage()">About</a>
+              <a onclick="goToProjectsPage()">Projects</a>
+              <a onclick="goToContactPage()">Contact</a>
               <a href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
               <a href="https://github.com/aalexmann" id="fa-github">GitHub</a>
               <a href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
@@ -37,7 +37,7 @@
 
     </header>
 
-    <main id="modelPage" class="container" role="main">
+    <main id="about-me-page" class="container" role="main">
 
         <div class="content-wrapper">
             <div class="content1">
@@ -58,7 +58,7 @@
             <div class="content3">
                 <img id="grad_pic" alt="picture-of-me-with-classmate" src="Photos/grad_pic.jpg">
                 <p class="sqsrte-large" ><em>I graduated in 2019 from UCLA with a degree in Spanish. During my junior year, I became inspired by 6 roommates
-                    who were Computer Science Majors. They reminded of why my first intended major as a freshman was CS as I took part in their app developments.
+                    who were Computer Science Majors. They reminded me of why my first intended major as a freshman was CS as I took part in their app developments.
                     Though I explored various disciplines, I am glad that the skills I developed to learn the Spanish language, syntax,
                     and grammar can carry over into programming.
                 </em></p>
@@ -70,7 +70,89 @@
 
             <h3 style="white-space:pre-wrap;">I would love to hear from you. <a href="mailto:alexjhidalgo@icloud.com" target="_blank" tabindex="0">Reach me here.</a></h3>
 
+        </footer>
     </main>
+
+
+
+
+
+
+
+
+    <div id="projects-page" class="container" role="page">
+        <h2 id="h2-contact" style="color: white;"> This page is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
+        </h2>
+
+        <section class="projects" id="projects-section">
+
+            <h1 id="projects-h1"> Projects </h1>
+
+            <div class="project" id="project-1">
+
+                <div class="project-info">
+
+                    <h2> "Miscellaneous Pop Culture Quiz"</h2>
+
+                    <div class="technologies-used">
+                        <img class="t-icon" alt="js-icon" src="js-icon.jpg">
+                        <img class="t-icon" alt="html5-icon" src="html-icon.jpg">
+                        <img class="t-icon" alt="css3-icon" src="css3-icon.jpg">
+                        <img class="t-icon" alt="jquery-icon" src="jquery-icon.jpg">
+                    </div>
+
+                    <p>
+                        Do you have a broad palette for pop culture? Take the quiz to see if you can complete these famous quotes from ten
+                        various movies/tv-shows.
+                    </p>
+
+                    <img class="screenshot" alt="homepage-of-app-screenshot" src="quiz-screenshot.jpg">
+
+                    <div class="code-links">
+                        
+                            <a class="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
+                                See Code
+                            </a>
+                    
+                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
+                                Use Demo
+                            </a>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <div id="contact-page">
+        <h2 id="h2-contact" style="color: white;"> This form is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
+        </h2>
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+          <p>Swing by for a cup of coffee, or leave me a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Photos/OSU_Header_Campus.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="company">Company</label>
+              <input type="text" id="company-name" name="company-name" placeholder="Your company name..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit" style="color:black">
+            </form>
+          </div>
+        </div>
+      </div>
+
     <script src="script.js"></script>
 </body>
 
