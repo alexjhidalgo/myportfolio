@@ -6,27 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alexandre Hidalgo Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="Icons/AHLogo.png"/>
 </head>
 
 <body>
     
     <header>
-        <div>
-            <img id="logo" src="Icons/AHLogo.png">
-        </div>
-        <nav>
-            <div id="nav-about"></div>
-            <div id="nav-projects"></div>
-            <div id="nav-contact"></div>
-        </nav>
 
-        <div class="header-actions">
+        <div class="topnav">
+            <img id="logo" src="Icons/AHLogo.png">
+            <div id="myLinks">
+              <a href="nav-about">About</a>
+              <a href="nav-projects">Projects</a>
+              <a href="nav-contact">Contact</a>
+              <a href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
+              <a href="https://github.com/aalexmann" id="fa-github">GitHub</a>
+              <a href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
+              
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="header-actions">
             <a id="fa-linkedin"></a>
             <a id="fa-github"></a>
             <a id="fa-email"></a>
         </div>
+
     </header>
+
+    <script src="script.js"></script>
 </body>
 
 <!-- <body>
