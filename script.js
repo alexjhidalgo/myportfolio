@@ -16,6 +16,7 @@ function goToAboutMePage() {
     else {
         document.getElementById("projects-page").style.display = "none";
         document.getElementById("contact-page").style.display = "none";
+        document.getElementById("download-page").style.display = "none";
         x.style.display = "block"
     }
 }
@@ -28,6 +29,7 @@ function goToProjectsPage() {
     else {
         document.getElementById("about-me-page").style.display = "none";
         document.getElementById("contact-page").style.display = "none";
+        document.getElementById("download-page").style.display = "none";
         x.style.display = "block"
     }
 }
@@ -40,6 +42,49 @@ function goToContactPage() {
     else {
         document.getElementById("projects-page").style.display = "none";
         document.getElementById("about-me-page").style.display = "none";
+        document.getElementById("download-page").style.display = "none";
         x.style.display = "block"
     }
+}
+
+function goToDownloadPage() {
+    var x = document.getElementById("download-page");
+    if (x.style.display === "block"){
+        x.style.display = "block"
+    }
+    else {
+        document.getElementById("projects-page").style.display = "none";
+        document.getElementById("about-me-page").style.display = "none";
+        document.getElementById("contact-page").style.display = "none";
+        x.style.display = "block"
+    }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }

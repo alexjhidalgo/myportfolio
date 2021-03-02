@@ -17,12 +17,13 @@
         <div class="topnav">
             <img id="logo" src="Icons/AHLogo.png">
             <div id="myLinks">
-              <a onclick="goToAboutMePage()">About</a>
-              <a onclick="goToProjectsPage()">Projects</a>
-              <a onclick="goToContactPage()">Contact</a>
-              <a href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
-              <a href="https://github.com/aalexmann" id="fa-github">GitHub</a>
-              <a href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
+              <a class="nav_a" style="float: left;" onclick="goToAboutMePage()">About</a>
+              <a class="nav_a" style="float: left;" onclick="goToProjectsPage()">Projects</a>
+              <a class="nav_a" style="float: left;" onclick="goToContactPage()">Contact</a>
+              <a class="nav_a" style="float: left;" onclick="goToDownloadPage()">Download</a>
+              <a class="nav_a" style="float: left;" href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
+              <a class="nav_a" style="float: left;" href="https://github.com/aalexmann" id="fa-github">GitHub</a>
+              <a class="nav_a" style="float: left;" href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
               
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -38,6 +39,38 @@
     </header>
 
     <main id="about-me-page" class="container" role="main">
+
+        <div class="picture-carousel">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class ="slide_pic" src="Photos/echo-park.jpg" >
+              <div class="text">Beginning in Los Angeles</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class ="slide_pic" src="Photos/LAX_UCLA.jpg" >
+              <div class="text">Relocating to pursue a new field</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class ="slide_pic" src="Photos/Portland_twilight.jpg" >
+              <div class="text">Landed in Portland, Oregon</div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
 
         <div class="content-wrapper">
             <div class="content1">
@@ -81,12 +114,23 @@
 
 
     <div id="projects-page" class="container" role="page">
-        <h2 id="h2-contact" style="color: white;"> This page is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
-        </h2>
+        <!-- <h2 id="h2-contact" style="color: white;"> This page is not currently functional, please send me an email or visit one of my social media pages via the nav menu.
+        </h2> -->
+        <div class="ul_project" style="color: azure;">
+            <h3> I have made several projects which utilize the following technologies:</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>ReactJS</li>
+            </ul>
 
+        </div>
         <section class="projects" id="projects-section">
 
             <h1 id="projects-h1"> Projects </h1>
+
 
             <div class="project" id="project-1">
 
@@ -95,10 +139,10 @@
                     <h2> "Miscellaneous Pop Culture Quiz"</h2>
 
                     <div class="technologies-used">
-                        <img class="t-icon" alt="js-icon" src="js-icon.jpg">
-                        <img class="t-icon" alt="html5-icon" src="html-icon.jpg">
-                        <img class="t-icon" alt="css3-icon" src="css3-icon.jpg">
-                        <img class="t-icon" alt="jquery-icon" src="jquery-icon.jpg">
+                        <img class="t-icon" alt="js-icon" src="Icons/js-icon.jpg">
+                        <img class="t-icon" alt="html5-icon" src="Icons/html-icon.jpg">
+                        <img class="t-icon" alt="css3-icon" src="Icons/css3-icon.jpg">
+                        <img class="t-icon" alt="jquery-icon" src="Icons/jquery-icon.jpg">
                     </div>
 
                     <p>
@@ -106,15 +150,15 @@
                         various movies/tv-shows.
                     </p>
 
-                    <img class="screenshot" alt="homepage-of-app-screenshot" src="quiz-screenshot.jpg">
+                    <img class="screenshot" alt="homepage-of-app-screenshot" src="Photos/quiz-screenshot.jpg">
 
                     <div class="code-links">
                         
-                            <a class="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
+                            <a class="repo_button" href="https://github.com/aalexmann/quiz-app" target="_blank">
                                 See Code
                             </a>
                     
-                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
+                            <a class="repo_button" href="https://aalexmann.github.io/quiz-app/" target="_blank">
                                 Use Demo
                             </a>
                         
@@ -138,7 +182,7 @@
             <img src="Photos/OSU_Header_Campus.jpg" style="width:100%">
           </div>
           <div class="column">
-            <form>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
               <label for="lname">Last Name</label>
@@ -152,6 +196,15 @@
           </div>
         </div>
       </div>
+
+      <div id="download-page">
+        <h2 id="h2-contact" style="color: white;"> This page is for a class assignment.
+        </h2>           
+            
+        <a href="Photos/meow_meow.jpeg" download="Photos/meow_meow.jpeg">
+            <button class="btn" style="width:60%"><i class="fa fa-download"></i> Click this button to download a picture of a cat</button>
+        </a>
+
 
     <script src="script.js"></script>
 </body>
