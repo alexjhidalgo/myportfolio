@@ -20,6 +20,10 @@
   margin-left: 15%;
 }
 
+#download-page {
+    display: None
+}
+
 .nav_a:hover {
   background-color: rgb(77, 75, 75);
   cursor: grab;
