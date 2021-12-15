@@ -8,38 +8,24 @@ function myFunction() {
     }
   };
 
-function goToAboutMePage() {
-    var x = document.getElementById("about-me-page");
-    if (x.style.display === "block"){
-        x.style.display = "block"
-    }
-    else {
-        document.getElementById("projects-page").style.display = "none";
-        document.getElementById("contact-page").style.display = "none";
-        x.style.display = "block"
-    }
+function goToMePage() {
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    let kay = path.length - page.length;
+    window.location.href = `${path.slice(0,kay)}me.html`;
+
 }
 
 function goToProjectsPage() {
-    var x = document.getElementById("projects-page");
-    if (x.style.display === "block"){
-        x.style.display = "block"
-    }
-    else {
-        document.getElementById("about-me-page").style.display = "none";
-        document.getElementById("contact-page").style.display = "none";
-        x.style.display = "block"
-    }
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    let kay = path.length - page.length;
+    window.location.href = `${path.slice(0,kay)}my_work.html`;
 }
 
 function goToContactPage() {
-    var x = document.getElementById("contact-page");
-    if (x.style.display === "block"){
-        x.style.display = "block"
-    }
-    else {
-        document.getElementById("projects-page").style.display = "none";
-        document.getElementById("about-me-page").style.display = "none";
-        x.style.display = "block"
-    }
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    let kay = path.length - page.length;
+    window.location.href = `${path.slice(0,kay)}contact.html`;
 }

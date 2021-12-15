@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alexandre Hidalgo Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../Icons/AHLogo.png"/>
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="topnav">
+
+            <img id="logo" src="../Icons/AHLogo.png" onclick="goToMePage()">
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div id="myLinks">
+              <p id="show-me" onclick="goToMePage()">Me</p>
+              <p id="show-mywork" onclick="goToProjectsPage()">My Work</p>
+              <p id="show-contact" onclick="goToContactPage()">Contact</p>
+              <a href="https://www.linkedin.com/in/alexjvh/" id="fa-linkedin">Linkedin</a>
+              <a href="https://github.com/aalexmann" id="fa-github">GitHub</a>
+              <a href="mailto:alexjhidalgo@icloud.com" id="fa-email">Email</a>
+            </div>
+
+          </div>
+
+          <div class="header-actions">
+            <a id="fa-linkedin"></a>
+            <a id="fa-github"></a>
+            <a id="fa-email"></a>
+        </div>
+
+    </header>
+
+
+
+    <main id="projects-page" class="container" role="main">
+
+        <section class="projects" id="projects-section">
+
+            <h1 id="projects-h1"> Projects </h1>
+
+            <div class="project" id="project-1">
+
+                <div class="project-info">
+
+                    <h2> "Miscellaneous Pop Culture Quiz"</h2>
+
+                    <div class="technologies-used">
+                        <img class="t-icon" alt="js-icon" src="../Icons/js-icon.jpg">
+                        <img class="t-icon" alt="html5-icon" src="../Icons/html-icon.jpg">
+                        <img class="t-icon" alt="css3-icon" src="../Icons/css3-icon.jpg">
+                        <img class="t-icon" alt="jquery-icon" src="../Icons/jquery-icon.jpg">
+                    </div>
+
+                    <p>
+                        Do you have a broad palette for pop culture? Take the quiz to see if you can complete these famous quotes from ten
+                        various movies/tv-shows.
+                    </p>
+
+                    <img class="screenshot" alt="homepage-of-app-screenshot" src="quiz-screenshot.jpg">
+
+                    <div class="code-links">
+                        
+                            <a class="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
+                                See Code
+                            </a>
+                    
+                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
+                                Use Demo
+                            </a>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
