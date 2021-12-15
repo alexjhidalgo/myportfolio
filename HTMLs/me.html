@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alexandre Hidalgo Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../Icons/AHLogo.png"/>
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="topnav">
+
+            <img id="logo" src="../Icons/AHLogo.png" onclick="goToMePage()">
+            
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a> -->
+
+            <div id="myLinks">
+              <p id="show-me" onclick="goToMePage()">Me</p>
+              <p id="show-mywork" onclick="goToProjectsPage()">My Work</p>
+              <p id="show-contact" onclick="goToContactPage()">Contact</p>
+            </div>
+
+          </div>
+
+          <!-- <div class="header-actions">
+            <a id="fa-linkedin"></a>
+            <a id="fa-github"></a>
+            <a id="fa-email"></a>
+        </div> -->
+
+    </header>
+
+    <main id="about-me-page" class="container" role="main">
+
+        <div class="content-wrapper">
+            <div class="content1">
+                <h2>
+                My full name is Alexandre Joseph Hidalgo, most call me "Alex" (He/Him/His). I am currently working as a tech support specialist with SalesForce CRM.
+                When the case load is light I like to take on tasks like writing tests in JavaScript, pushing bug fixes to github,
+                and executing anonymous code in Apex. At the moment (12-14-2021), I am in the process of reformatting my Portfolio
+                to use handlebarsjs. Once mastered I will begin to implement ReactJS.
+                </h2>
+                <p class="sqsrte-large" style="white-space:pre-wrap;"><em>Looking for Software Engineering roles.</em></p>
+            </div>
+            <div class="content2">
+                <img id="desk" alt="picture-of-work-bench" src="../Photos/work_desk.jpeg">
+                <p class="sqsrte-large" ><em>This is where I did my work during the pandemic school year of 2020-21. I have since
+                    moved back to Los Angeles.
+                </em></p>
+            </div>
+            <div class="content3">
+                <img id="grad_pic" alt="picture-of-me-with-classmate" src="../Photos/grad_pic.jpg">
+                <p class="sqsrte-large" ><em>I graduated in 2019 from UCLA with a degree in Spanish. During my junior year, I was inspired by 6 roommates
+                    who were Computer Science Majors. They reminded me of why my first intended major as a freshman was CS as I took part in app developments.
+                    Studying Spanish proved valuable for studying programming languages. I adapt quickly to using new syntaxes.
+                </em></p>
+            </div>
+
+        </div>
+
+        <footer>
+
+            <h3 style="white-space:pre-wrap;">I look forward to hearing from you. <a href="mailto:alexjhidalgo@icloud.com" target="_blank" tabindex="0">Reach me here.</a></h3>
+
+        </footer>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

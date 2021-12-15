@@ -14,16 +14,47 @@ body {
     height: 85px;
 }
 
+/* Navbar */
+
 .topnav {
     overflow: hidden;
     background-color: black;
     position: relative;
   }
   
-  .topnav #myLinks {
-    display: none;
+  #myLinks {
+    display: inline-block;
+  }
+
+  #show-me {
+    color: rgb(218, 113, 87);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+  }
+
+  #show-mywork {
+    color: rgb(66, 207, 125);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+  }
+
+  #show-contact {
+    color: rgb(79, 150, 216);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
   }
   
+  .topnav p:hover {
+    background-color: rgb(29, 28, 28);
+    color: black;
+  }
+
   .topnav a {
     color: white;
     padding: 14px 16px;
