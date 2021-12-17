@@ -17,10 +17,6 @@
         <div class="topnav">
 
             <img id="logo" src="../Icons/AHLogo.png" onclick="goToMePage()">
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
 
             <div id="myLinks">
               <p id="show-me" onclick="goToMePage()">Me</p>
@@ -30,18 +26,69 @@
 
           </div>
 
-          <div class="header-actions">
-            <a id="fa-linkedin"></a>
-            <a id="fa-github"></a>
-            <a id="fa-email"></a>
-        </div>
-
     </header>
 
     <main id="contact-page">
-        <div style="text-align:center">
+
+      <div class="contact" id="email-div">
+
+        <img class="contact-icon" src="../Icons/mail-icon.png">
+
+        <p>
+          EMAIL
+        </p>
+
+        <a id="email-send" href="mailto:alexjhidalgo@icloud.com">
+          alexjhidalgo@icloud.com
+        </a>
+
+      </div>
+
+      <div class="contact" id="phone-div">
+
+        <img class="contact-icon" src="../Icons/phone-icon.jpeg">
+
+        <p>
+          PHONE
+        </p>
+
+        <p id="phone-send">
+          310-721-5590
+        </p>
+
+      </div>
+
+      <div class="contact" id="github-div">
+
+        <img class="contact-icon" src="../Icons/green-github-icon.png">
+
+        <p>
+          GITHUB PROFILE
+        </p>
+
+        <a id="github-send" href="github.com/aalexmann">
+          github.com/aalexmann
+        </a>
+
+      </div>
+
+      <div class="contact" id="linkedin-div">
+
+        <img class="contact-icon" src="../Icons/linkedin-icon.png">
+
+        <p>
+          Linkedin Profile
+        </p>
+
+        <a href="https://www.linkedin.com/in/alexjvh/">
+          linkedin.com/in/alexjvh/
+        </a>
+
+      </div>
+        <!-- <div style="text-align:center">
           <h2>Contact Me</h2>
         </div>
+
         <div class="row">
           <div class="column">
             <img src="../Photos/OSU_Header_Campus.jpg" style="width:100%">
@@ -60,7 +107,8 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
+    </main>
 
     <script src="../script.js"></script>
 </body>
