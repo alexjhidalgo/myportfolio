@@ -15,7 +15,18 @@ function goToMePage()
     let path = window.location.pathname;
     let page = path.split("/").pop();
     let kay = path.length - page.length;
-    window.location.href = `${path.slice(0,kay)}me.html`;
+
+    let maybe_html = path.slice(kay-6, kay);
+    if (maybe_html == "HTMLs/")
+    {
+      window.location.href = `${path.slice(0,kay-6)}me.html`;
+    }
+    else 
+    {
+      window.location.href = `${path.slice(0,kay)}me.html`;
+    }
+    
+    
 }
 
 function goToProjectsPage()
@@ -25,7 +36,15 @@ function goToProjectsPage()
     let path = window.location.pathname;
     let page = path.split("/").pop();
     let kay = path.length - page.length;
-    window.location.href = `${path.slice(0,kay)}my_work.html`;
+    let maybe_html = path.slice(kay-6, kay);
+    if (maybe_html == "HTMLs/")
+    {
+      window.location.href = `${path.slice(0,kay)}my_work.html`;
+    }
+    else 
+    {
+      window.location.href = `${path.slice(0,kay)}HTMLs/my_work.html`;
+    }
 }
 
 function goToContactPage()
@@ -35,5 +54,13 @@ function goToContactPage()
     let path = window.location.pathname;
     let page = path.split("/").pop();
     let kay = path.length - page.length;
-    window.location.href = `${path.slice(0,kay)}contact.html`;
+    let maybe_html = path.slice(kay-6, kay);
+    if (maybe_html == "HTMLs/")
+    {
+      window.location.href = `${path.slice(0,kay)}contact.html`;
+    }
+    else 
+    {
+      window.location.href = `${path.slice(0,kay)}HTMLs/contact.html`;
+    }
 }
