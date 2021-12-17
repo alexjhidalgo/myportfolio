@@ -171,12 +171,10 @@ h3 > a {
 }
 
 
-
-#contact-page {
-    display: none;
+.contact-icon {
+  width: 10%;
+  height: 10%;
 }
-
-
 
 
 /* Style inputs */
