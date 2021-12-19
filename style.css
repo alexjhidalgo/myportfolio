@@ -176,6 +176,10 @@ h3 > a {
   height: 10%;
 }
 
+#phone-send {
+  color: white;
+}
+
 
 /* Style inputs */
 input[type=text], select, textarea {

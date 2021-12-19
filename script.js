@@ -19,11 +19,11 @@ function goToMePage()
     let maybe_html = path.slice(kay-6, kay);
     if (maybe_html == "HTMLs/")
     {
-      window.location.href = `${path.slice(0,kay-6)}me.html`;
+      window.location.href = `${path.slice(0,kay-6)}index.html`;
     }
     else 
     {
-      window.location.href = `${path.slice(0,kay)}me.html`;
+      window.location.href = `${path.slice(0,kay)}index.html`;
     }
     
     
