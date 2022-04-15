@@ -176,21 +176,42 @@ label {
 /* Contact page elements */
 
 #contact-page {
-    position: relative;
+  display:flex;
+  margin-top: 10%;
 }
 
-.contact{
-    display: inline-block;
+#contacts_1_2 {
+  width: 40%;
+  height: 40%;
+  margin-left: 20%;
+}
+#contacts_3_4 {
+  width: 40%;
+  height: 40%;
 }
 
 .contact-icon {
-  width: 10%;
-  height: 10%;
-/*   display: inline-block; */
+  width: 20%;
+  height: 20%;
 }
 
 .contact_p {
   color: white;
+}
+
+#email-div {
+  text-decoration: none;
+}
+
+#phone-div {
+  text-decoration: none;
+}
+
+#github-div {
+  text-decoration: none;
+}
+
+#linkedin-div {
   text-decoration: none;
 }
 
