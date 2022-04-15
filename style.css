@@ -122,6 +122,14 @@ p {
     padding: 5%;
 }
 
+#contact-page {
+    display: inline-block;
+}
+
+.contact{
+    display: inline-block;
+}
+
 #desk {
     display: block;
     margin-left: auto;
