@@ -181,7 +181,6 @@ label {
 
 .contact{
     display: inline-block;
-    text-decoration: none;
 }
 
 .contact-icon {
@@ -192,6 +191,7 @@ label {
 
 .contact_p {
   color: white;
+  text-decoration: none;
 }
 
 /* Style inputs */
