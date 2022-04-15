@@ -122,14 +122,6 @@ p {
     padding: 5%;
 }
 
-#contact-page {
-    display: inline-block;
-}
-
-.contact{
-    display: inline-block;
-}
-
 #desk {
     display: block;
     margin-left: auto;
@@ -178,21 +170,29 @@ h3 > a {
     display: none;
 }
 
+label {
+    color: white;
+}
+/* Contact page elements */
+
+#contact-page {
+    position: relative;
+}
+
+.contact{
+    display: inline-block;
+    text-decoration: none;
+}
 
 .contact-icon {
   width: 10%;
   height: 10%;
-  display: block;
+/*   display: inline-block; */
 }
 
 .contact_p {
   color: white;
 }
-
-label {
-    color: white;
-}
-
 
 /* Style inputs */
 input[type=text], select, textarea {
