@@ -189,6 +189,10 @@ h3 > a {
   color: white;
 }
 
+label {
+    color: white;
+}
+
 
 /* Style inputs */
 input[type=text], select, textarea {
