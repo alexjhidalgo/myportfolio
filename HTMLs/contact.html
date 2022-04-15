@@ -20,7 +20,7 @@
 
             <div id="myLinks">
               <p id="show-me" onclick="goToMePage()">Me</p>
-              <p id="show-mywork" onclick="goToProjectsPage()">My Work</p>
+<!--               <p id="show-mywork" onclick="goToProjectsPage()">My Work</p> -->
               <p id="show-contact" onclick="goToContactPage()">Contact</p>
             </div>
 
@@ -46,11 +46,11 @@
 
       <div class="contact" id="phone-div">
 
-        <img class="contact-icon" src="../Icons/phone-icon.jpeg">
-
+        <img class="contact-icon" src="../Icons/phone-icon.jpeg" onclick="phoneCall()">
+<!-- 
         <p>
           PHONE
-        </p>
+        </p> -->
 
         <p id="phone-send">
           310-721-5590
@@ -60,29 +60,29 @@
 
       <div class="contact" id="github-div">
 
-        <img class="contact-icon" src="../Icons/green-github-icon.png">
+        <img class="contact-icon" src="../Icons/green-github-icon.png" onclick="goToGithub()">
 
-        <p>
+<!--         <p>
           GITHUB PROFILE
         </p>
 
         <a id="github-send" href="github.com/aalexmann">
           github.com/aalexmann
         </a>
-
+ -->
       </div>
 
       <div class="contact" id="linkedin-div">
 
-        <img class="contact-icon" src="../Icons/linkedin-icon.png">
+        <img class="contact-icon" src="../Icons/linkedin-icon.png" onclick="goToLinkedIn()">
 
-        <p>
+<!--         <p>
           Linkedin Profile
         </p>
 
         <a href="https://www.linkedin.com/in/alexjvh/">
           linkedin.com/in/alexjvh/
-        </a>
+        </a> -->
 
       </div>
         <!-- <div style="text-align:center">
@@ -94,17 +94,21 @@
             <img src="../Photos/OSU_Header_Campus.jpg" style="width:100%">
           </div>
           <div class="column">
-            <form>
+
+            <form onsubmit="sendMessageToSelf()">
+
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" placeholder="first name">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastname" placeholder="last name">
               <label for="company">Company</label>
-              <input type="text" id="company-name" name="company-name" placeholder="Your company name..">
+                <input type="text" id="company-name" name="company-name" placeholder="company name">
               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit" style="color:black">
+                <textarea id="subject" name="subject" placeholder="message" style="height:170px"></textarea>
+                <input type="submit" value="Submit" style="color:black">
+
             </form>
+
           </div>
         </div>
       </div> -->
