@@ -174,10 +174,10 @@ h3 > a {
 .contact-icon {
   width: 10%;
   height: 10%;
-  display: inline-block;
+  display: block;
 }
 
-#phone-send {
+.contact_p {
   color: white;
 }
 
