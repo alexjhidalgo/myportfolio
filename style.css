@@ -232,15 +232,18 @@ h3 > a {
 .code-links {
   display: flex;
   margin-top: 4%;
-  /* align-content: space-evenly; */
+  width: 100%;
+  text-align: center;
 }
 
 #see-code {
   text-decoration: none;
   color: white;
   margin-right: 5%;
+  margin-left: 15%;
   border: 0.7px solid whitesmoke;
-  padding: 4%
+  padding: 4%;
+  width: 30%;
 }
 
 #see-code:hover {
@@ -251,8 +254,10 @@ h3 > a {
   text-decoration: none;
   color: white;
   margin-left: 5%;
+  margin-right: 15%;
   border: 0.7px solid whitesmoke;
-  padding: 4%
+  padding: 4%;
+  width: 30%;
 }
 
 #use-demo:hover {
