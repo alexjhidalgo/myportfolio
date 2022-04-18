@@ -32,42 +32,169 @@
 
     <main id="projects-page" class="container" role="main">
 
-        <section class="projects" id="projects-section">
+            <div class="project">
 
-            <h1 id="projects-h1"> Projects </h1>
+                <h2> "Job Tracker"</h2>
 
-            <div class="project" id="project-1">
+                <p>
+                    My most recent collaborative effort to build a website where job
+                    seekers can keep tabs on all the positions they've applied for 
+                    as well as gain insight into which particular skills are in demand.
+                </p>
 
-                <div class="project-info">
+                <div class="slideshow-container">
 
-                    <h2> "Miscellaneous Pop Culture Quiz"</h2>
-
-                    <div class="technologies-used">
-                        <img class="t-icon" alt="js-icon" src="../Icons/js-icon.jpg">
-                        <img class="t-icon" alt="html5-icon" src="../Icons/html-icon.jpg">
-                        <img class="t-icon" alt="css3-icon" src="../Icons/css3-icon.jpg">
-                        <img class="t-icon" alt="jquery-icon" src="../Icons/jquery-icon.jpg">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="../Photos/projects/jt_home.png" style="width:100%">
+                      <div class="text"></div>
                     </div>
 
-                    <p>
-                        Do you have a broad palette for pop culture? Take the quiz to see if you can complete these famous quotes from ten
-                        various movies/tv-shows.
-                    </p>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="../Photos/projects/jt_contacts.png" style="width:100%">
+                      <div class="text">Add with React Modal</div>
+                    </div>
 
-                    <img class="screenshot" alt="homepage-of-app-screenshot" src="../Photos/quiz-screenshot.jpg">
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../Photos/projects/jt_skills.png" style="width:100%">
+                        <div class="text">Data from Intersection Table</div>
+                      </div>
 
-                    <div class="code-links">
-                        
-                            <a class="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
-                                See Code
-                            </a>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <br>
+                  
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <p style="text-align: left;">Built Using:</p>
+
+                <div class="technologies-used">
+                    <img class="t-icon" alt="js-icon" src="../Icons/js-icon.png" title="JavaScript">
+                    <img class="t-icon" alt="react-icon" src="../Icons/React-icon.png" title="reactJS">
+                    <img class="t-icon" alt="html5-icon" src="../Icons/html5-icon.png" title="html5">
+                    <img class="t-icon" alt="css3-icon" src="../Icons/css-icon.png" title="css3">
+                    <img class="t-icon" alt="heroku-icon" src="../Icons/heroku-icon.png" title="heroku">
+                    <img class="t-icon" alt="postgres-icon" src="../Icons/postgres-icon.png" title="postgreSQL">
+                </div>
+
+                <div class="code-links">
                     
-                            <a class="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
-                                Use Demo
-                            </a>
-                        
-                    </div>
+                    <a id="see-code" href="https://github.com/aalexmann/job_tracker" target="_blank">
+                        See Code
+                    </a>
+            
+                    <a id="use-demo" href="https://job-tracker-app-ahjk.herokuapp.com/" target="_blank">
+                        Use Demo
+                    </a>
+                    
+                </div>
 
+            </div>
+
+            <div class="project">
+
+                <h2> "Bright Lights Big City"</h2>
+
+                <p>
+                    My most recent collaborative effort to build a website where job
+                    seekers can keep tabs on all the positions they've applied for 
+                    as well as gain insight into which particular skills are in demand.
+                </p>
+
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="../Photos/projects/bc_home.jpeg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+         
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="../Photos/projects/bc_model.jpeg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                      
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <br>
+                  
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+
+                <p style="text-align: left;">Built Using:</p>
+
+                <div class="technologies-used">
+                    <img class="t-icon" alt="js-icon" src="../Icons/js-icon.png" title="JavaScript">
+                    <img class="t-icon" alt="html5-icon" src="../Icons/html5-icon.png" title="html5">
+                    <img class="t-icon" alt="css3-icon" src="../Icons/css-icon.png" title="css3">
+                    <img class="t-icon" alt="jquery-icon" src="../Icons/jquery-icon.png" title="jQuery">
+                </div>
+
+                <div class="code-links">
+                    
+                    <a id="see-code" href="https://github.com/aalexmann/job_tracker" target="_blank">
+                        See Code
+                    </a>
+            
+                    <a id="use-demo" href="https://job-tracker-app-ahjk.herokuapp.com/" target="_blank">
+                        Use Demo
+                    </a>
+                    
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <h2> "Miscellaneous Pop Culture Quiz"</h2>
+
+                <p>
+                    With this being one of the first web-pages I ever built, it is fun to go through it
+                    from time to time and see how far i've come. Take the quiz to see if you can complete
+                    these famous quotes from ten various movies/tv-shows.
+                </p>
+
+                <img class="screenshot" alt="homepage-of-app-screenshot" src="../Photos/quiz-screenshot.jpg">
+                
+                <p style="text-align: left;">Built Using:</p>
+
+                <div class="technologies-used">
+                    <img class="t-icon" alt="js-icon" src="../Icons/js-icon.png" title="JavaScript">
+                    <img class="t-icon" alt="html5-icon" src="../Icons/html5-icon.png" title="html5">
+                    <img class="t-icon" alt="css3-icon" src="../Icons/css-icon.png" title="css3">
+                    <img class="t-icon" alt="jquery-icon" src="../Icons/jquery-icon.png" title="jQuery">
+                </div>
+
+                <div class="code-links">
+                    
+                    <a id="see-code" href="https://github.com/aalexmann/quiz-app" target="_blank">
+                        See Code
+                    </a>
+            
+                    <a id="use-demo" href="https://aalexmann.github.io/quiz-app/" target="_blank">
+                        Use Demo
+                    </a>
+                    
                 </div>
 
             </div>
