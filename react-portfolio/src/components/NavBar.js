@@ -1,30 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import ProjectsPage from '../pages/ProjectsPage';
+import ServicesPage from '../pages/ServicesPage';
+import OpinionsPage from '../pages/OpinionsPage';
+import ContactPage from '../pages/ContactPage';
 
 const NavBar = () => {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                    <Link to="/services">Services</Link>
-                </li>
-                <li>
-                    <Link to="/services">Services</Link>
-                </li>
-                <li>
-                    <Link to="/opinions">Opinions</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-        </nav>
+    <div>uhhhh
+            <Router>
+                <Routes>
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/projectsPage" component={ProjectsPage} />
+                    <Route path="/servicesPage" component={ServicesPage} />
+                    <Route path="/opinionsPage" component={OpinionsPage} />
+                    <Route path="/contactPage" component={ContactPage} />
+                </Routes>
+            </Router>
+    </div>
     );
 };
 
