@@ -1,25 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
-import ProjectsPage from '../pages/ProjectsPage';
-import ServicesPage from '../pages/ServicesPage';
-import OpinionsPage from '../pages/OpinionsPage';
-import ContactPage from '../pages/ContactPage';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+function NavBar() {
     return (
-    <div>uhhhh
-            <Router>
-                <Routes>
-                    <Route exact path="/" component={HomePage} />
-                    <Route path="/projectsPage" component={ProjectsPage} />
-                    <Route path="/servicesPage" component={ServicesPage} />
-                    <Route path="/opinionsPage" component={OpinionsPage} />
-                    <Route path="/contactPage" component={ContactPage} />
-                </Routes>
-            </Router>
-    </div>
+        <nav>
+            <Link to="/HomePage">Home</Link>
+            <Link to="/ProjectsPage">Projects</Link>
+            <Link to="/ServicesPage">Services</Link>
+            <Link to="/OpinionsPage">Opinions</Link>
+            <Link to="/ContactPage">Contact</Link>
+        </nav>
     );
-};
+}
 
 export default NavBar;
