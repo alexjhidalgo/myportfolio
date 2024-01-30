@@ -11,9 +11,9 @@ const HomePage = () => {
             
             <div>
                 hello
-                <Tile />
-                <Tile />
-                <Tile /> 
+                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile title="Example Title" description="Example Description" image="example.jpg"/> 
             </div>
             <Footer />
         </div>
