@@ -22,7 +22,7 @@ const HomePage = () => {
                 <Tile 
                     title="Family" 
                     description="Hidalgo, Hays, and Valdivia, legacies of entrepreneurship." 
-                    image="example.jpg"/>
+                    image={AHLogo}/>
             </div>
 
             <div className="main-column-top">
