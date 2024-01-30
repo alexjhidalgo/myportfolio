@@ -3,17 +3,21 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tile from '../components/Tile';
 
+// Photo imports
+import AHLogo from '../photos/AHLogo.png';
+
 const HomePage = () => {
 
     return (
         <div>
             <Header />
             
-            <div class="personal-column-left-narrow">
+            <div className="personal-column-left-narrow">
+
                 <Tile 
                     title="History" 
                     description="La Quinta, CA, a Charmed Life" 
-                    image="example.jpg"/>
+                    image={AHLogo} />
 
                 <Tile 
                     title="Family" 
@@ -21,9 +25,9 @@ const HomePage = () => {
                     image="example.jpg"/>
             </div>
 
-            <div class="main-column-top">
+            <div className="main-column-top">
 
-                <div class="main-column-left">
+                <div className="main-column-left">
                     <Tile 
                         title="Handwritten" 
                         description="iOS App using text recognition to digitize your handwriting to send personal letters." 
@@ -45,7 +49,7 @@ const HomePage = () => {
                         image="example.jpg"/>
                 </div>
 
-                <div class="main-column-right">
+                <div className="main-column-right">
                     <Tile 
                         title="Big Farma" 
                         description="Example Description" 
@@ -75,7 +79,7 @@ const HomePage = () => {
 
             </div>
 
-            <div class="business-column-right-narrow">
+            <div className="business-column-right-narrow">
                 <Tile 
                     title="Travel" 
                     description="Did you read that opinion piece? or puff piece? .. either way, get on my level! (i'll help you)" 
