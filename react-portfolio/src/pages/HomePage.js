@@ -10,57 +10,96 @@ const HomePage = () => {
             <Header />
             
             <div class="personal-column-left-narrow">
-                <h3>History</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="History" 
+                    description="La Quinta, CA, a Charmed Life" 
+                    image="example.jpg"/>
 
-                <h3>Family</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Family" 
+                    description="Hidalgo, Hays, and Valdivia, legacies of entrepreneurship." 
+                    image="example.jpg"/>
             </div>
 
-            <div class="main-column-left">
-                <h3>Handwritten</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+            <div class="main-column-top">
 
-                <h3>Doge Farms</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <div class="main-column-left">
+                    <Tile 
+                        title="Handwritten" 
+                        description="iOS App using text recognition to digitize your handwriting to send personal letters." 
+                        image="example.jpg"/>
 
-                <h3>Hidalgo Properties</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                    <Tile 
+                        title="Doge Farms" 
+                        description="Example Description" 
+                        image="example.jpg"/>
 
-                <h3>Shelter Space</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
-            </div>
+                    <Tile 
+                        title="Hidalgo Properties" 
+                        description="Business Website for Property Management, Listings, and Leads on New Properties." 
+                        image="example.jpg"/>
 
-            <div class="main-column-right">
-                <h3>Big Farma</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                    <Tile 
+                        title="Shelter Space" 
+                        description="iOS App for finding available shelter space for the unhoused." 
+                        image="example.jpg"/>
+                </div>
 
-                <h3>Travel Perspective (Historically Advantaged)</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <div class="main-column-right">
+                    <Tile 
+                        title="Big Farma" 
+                        description="Example Description" 
+                        image="example.jpg"/>
 
-                <h3>California Real Estate (Then and Now)</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                    <Tile 
+                        title="Travel Perspective" 
+                        description="Historically never been easier" 
+                        image="example.jpg"/>
 
-                <h3>Know Thyself, Relish Each Step (A persuasive essay about writing habitually)</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                    <Tile 
+                        title="California Real Estate" 
+                        description="Why the price jumps kinda make sense" 
+                        image="example.jpg"/>
+
+                    <Tile 
+                        title="Know Thyself, Relish Each Step" 
+                        description="A persuasive essay about writing habitually" 
+                        image="example.jpg"/>
+
+                    <Tile 
+                        title="Healthcare.. I've Got It?" 
+                        description="It's not perfect, yet still the best." 
+                        image="example.jpg"/>
+
+                </div>
 
             </div>
 
             <div class="business-column-right-narrow">
-                <h3>Travel</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Travel" 
+                    description="Did you read that opinion piece? or puff piece? .. either way, get on my level! (i'll help you)" 
+                    image="example.jpg"/>
 
-                <h3>Legal Services</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Legal Services" 
+                    description="Don't get taken for a ride. We'll also write your will with you." 
+                    image="example.jpg"/>
 
-                <h3>Real Estate Services (License Pending)</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Real Estate Services (License Pending)" 
+                    description="I can help; im kind of obsessed." 
+                    image="example.jpg"/>
 
-                <h3>Financial Planning</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Financial Planning" 
+                    description="I see the opportunities for surplus in your future!" 
+                    image="example.jpg"/>
 
-                <h3>Education Consultation</h3>
-                <Tile title="Example Title" description="Example Description" image="example.jpg"/>
+                <Tile 
+                    title="Education Consultation" 
+                    description="Let's get you learned." 
+                    image="example.jpg"/>
             </div>
             <Footer />
         </div>
