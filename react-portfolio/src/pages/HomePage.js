@@ -3,9 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tile from '../components/Tile';
 
-// Photo imports
-import AHLogo from '../photos/AHLogo.png';
-
 const HomePage = () => {
 
     return (
@@ -17,12 +14,12 @@ const HomePage = () => {
                 <Tile 
                     title="History" 
                     description="La Quinta, CA, a Charmed Life" 
-                    image={AHLogo} />
+                    image="/favicon.ico" />
 
                 <Tile 
                     title="Family" 
                     description="Hidalgo, Hays, and Valdivia, legacies of entrepreneurship." 
-                    image={AHLogo}/>
+                    image="/favicon.ico"/>
             </div>
 
             <div className="main-column-top">
