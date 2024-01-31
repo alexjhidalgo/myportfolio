@@ -14,7 +14,7 @@ const HomePage = () => {
                 <Tile 
                     title="History" 
                     description="La Quinta, CA, a Charmed Life" 
-                    image="/favicon.ico" />
+                    image="/date-palm-inner-van.png" alt="childhoood-home"/>
 
                 <Tile 
                     title="Family" 
