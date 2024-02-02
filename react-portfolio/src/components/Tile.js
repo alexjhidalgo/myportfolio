@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Tile = ({ title, description, image }) => {
+const Tile = ({ title, description, tileClassName, image, imgClassName }) => {
   return (
-    <div className="tile">
-      {image && <img src={image} alt={title} />}
+    <div className={tileClassName}>
       <h2>{title}</h2>
+      {image && <img src={image} alt={title} className={imgClassName} />}
       <p>{description}</p>
     </div>
   );
