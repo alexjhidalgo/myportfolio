@@ -96,7 +96,7 @@ const HomePage = () => {
                                 title="Know Thyself, Relish Each Step" 
                                 tileClassName="tile-main"
                                 imgClassName="tile-img-main" 
-                                description="A persuasive essay about writing habitually" 
+                                description="A persuasive essay about habitual writing" 
                                 image="journal-ios.png"/>
 
                             <Tile 
@@ -114,7 +114,7 @@ const HomePage = () => {
                         title="Travel" 
                         tileClassName="tile"
                         imgClassName="tile-img"
-                        description="Did you read that opinion piece? or puff piece? .. either way, get on my level! (i'll help you)" 
+                        description="Did you read that opinion piece about travel? Get on my level! (i'll help you)" 
                         image="aina-haina-deck.png"/>
 
                     <Tile 

@@ -5,13 +5,31 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    border-image-source: linear-gradient(45deg, #ff0000, #0000ff);
+    border-image-slice: 20;
+    border-image-repeat: round;
 }
 .ornamental-graphic-left {
-    font-family: 'Old English Text MT', serif;
+    font-family: 'Script MT Bold', cursive;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    border-image-source: linear-gradient(45deg, #ff0000, #0000ff);
+    border-image-slice: 20;
+    border-image-repeat: round;
+    
 }
 .center-graphic {
-    font-family: 'Old English Text MT', serif;
+    font-family: 'Script MT Bold', cursive;
+    font-size: 24px;    
 }
 .ornamental-graphic-right {
-    font-family: 'Old English Text MT', serif;
+    font-family: 'Script MT Bold', cursive;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    border-image-source: linear-gradient(45deg, #ff0000, #0000ff);
+    border-image-slice: 20;
+    border-image-repeat: round;
 }
