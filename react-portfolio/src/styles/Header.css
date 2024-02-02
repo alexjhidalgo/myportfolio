@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+English+Text+MT&display=swap');
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ornamental-graphic-left {
+    font-family: 'Old English Text MT', serif;
+}
+.center-graphic {
+    font-family: 'Old English Text MT', serif;
+}
+.ornamental-graphic-right {
+    font-family: 'Old English Text MT', serif;
+}

@@ -1,4 +1,101 @@
 .tile-img {
     height: 200px;
     width: 200px;
-  }
+}
+.tile-img-main {
+    height: 280px;
+    width: 280px;
+}
+.tile {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    background-color: #e8d8c3;
+    filter: sepia(0.5) saturate(0.5) brightness(0.9);
+}
+
+.tile-main {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    background-color: #e8d8c3;
+    filter: sepia(0.5) saturate(0.5) brightness(0.9);
+}
+
+.homepage {
+    background-color: #e8d8c3;
+    filter: sepia(0.5) saturate(0.5) brightness(0.9);
+}
+
+nav {
+    background-color: #e8d8c3;
+    filter: sepia(0.5) saturate(0.5) brightness(0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.date {
+    width: 100vw;
+    text-align: center;
+}
+h1 {
+    font-family: 'Old English Text MT', serif;
+}
+h2 {
+    text-align: center;
+    color: #ff0000; /* Set the text color to red */
+    font-size: 24px; /* Set the font size to 24 pixels */
+    font-weight: bold; /* Set the font weight to bold */
+    text-decoration: underline; /* Add an underline to the text */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    font-family: 'Old English Text MT', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Old+English+Text+MT&display=swap');
+h3 {
+    text-align: center;
+    font-family: 'Old English Text MT', serif;
+}
+
+p{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+.personal-column-left-narrow {
+    flex: 1;
+    padding-left: 1%;
+    padding-right: 5%;
+}
+
+.main-column-top {
+    flex: 2;
+    display: flex;
+    
+}
+
+.main-column-left {
+    flex: 1;
+    padding-right: 1%;
+}
+.main-column-right {
+    flex: 2;
+    padding-left: 1%;
+}
+
+.business-column-right-narrow {
+    flex: 3;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+
+.columns {
+    display: flex;
+}
