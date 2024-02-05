@@ -20,7 +20,7 @@ const HomePage = () => {
             <div className="columns">
                 
                 <div className="personal-column-left-narrow">
-
+                <h3>About</h3>
                     <Tile 
                         title="History" 
                         tileClassName="tile"
@@ -32,7 +32,7 @@ const HomePage = () => {
                         title="Family" 
                         tileClassName="tile"
                         imgClassName="tile-img"
-                        description="Hidalgo, Hays, and Valdivia, legacies of entrepreneurship." 
+                        description="Valdivia, Hidalgo, and Hays, legacies of entrepreneurship." 
                         image="/kyrie-beach-stairs.png"/>
                 </div>
 
@@ -77,6 +77,18 @@ const HomePage = () => {
                                 imgClassName="tile-img-main" 
                                 description="One day I shall return to my farm like old Cinncinatus." 
                                 image="pompeii-vineyard.png"/>
+                                {/* Add the ingredients section from the AG1 website and
+                                add that while it is great, the actual whole foods will be better for
+                                several reasons. I like the example of "how hungry you feel after a swim,
+                                the way food just hits different", in order to demonstrate how mild/healthy
+                                deprivation can also be good and lead to more satisfying high poinsts in 
+                                life. This same concept applies to fasting, sex, etc.
+                                another example can be taken from preparing food, specifically an
+                                improvised approach, where you take a gamble based on what you have and
+                                what feels like something you'd like, using your evolutionary senses of
+                                sight, smell, and touch to decide what you might throw into your meal.
+                                Remember the journey can be just as important and satisfying as the
+                                destination of hollistic health*/}
 
                             <Tile 
                                 title="Travel Perspective" 
@@ -110,6 +122,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="business-column-right-narrow">
+                <h3>Business</h3>
                     <Tile 
                         title="Travel" 
                         tileClassName="tile"
